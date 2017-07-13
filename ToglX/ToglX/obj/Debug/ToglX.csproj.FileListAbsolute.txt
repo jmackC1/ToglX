@@ -48,3 +48,7 @@ C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\C1.Xamarin.Forms.G
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\C1.Xamarin.Forms.Input.xml
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\obj\Debug\ToglX.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll.mdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\obj\Debug\ToglX.dll.mdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll.mdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\obj\Debug\ToglX.dll.mdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll.mdb

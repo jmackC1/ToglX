@@ -22,7 +22,7 @@ namespace ToglX
         private void Button_Clicked(object sender, EventArgs e)
         {
             
-            DisplayAlert("Confirm Entry", "Enter " + platPicker.SelectedItem + "?", "OK");
+            DisplayAlert("Confirm Entry for ", descEntry.Text + "?", "OK");
         }
     }
 }

@@ -34,6 +34,7 @@
                     <x:String>Pre-Sales</x:String>
                 </Picker.Items>
             </Picker>
+            <Entry x:Name="tagEntry" Placeholder="Tags" HorizontalOptions="FillAndExpand"/>
             <Button TextColor="White" BackgroundColor="Red" Text="Submit" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage>

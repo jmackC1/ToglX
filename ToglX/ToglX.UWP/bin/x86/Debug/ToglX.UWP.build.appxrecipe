@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b9c8597c-e11e-45a0-8812-feb37c8c91ec</PackageIdentityName>
     <PackageIdentityPublisher>CN=justinm</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\ToglX.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\ToglX.UWP.exe">
       <PackagePath>entrypoint\ToglX.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justinm\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -382,132 +382,132 @@
     <AppxPackagedFile Include="C:\Users\justinm\.nuget\packages\Xamarin.Forms\2.3.4.224\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll">
       <PackagePath>ToglX.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-125.png">
       <PackagePath>Assets\LockScreenLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-150.png">
       <PackagePath>Assets\LockScreenLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\LockScreenLogo.scale-400.png">
       <PackagePath>Assets\LockScreenLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\ToglX.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\ToglX.UWP.xr.xml">
       <PackagePath>ToglX.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
@@ -519,11 +519,11 @@
     <AppxPackagedFile Include="C:\Users\justinm\.nuget\packages\Xamarin.Forms\2.3.4.224\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\ToglX.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\ToglX.UWP.exe">
       <PackagePath>ToglX.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

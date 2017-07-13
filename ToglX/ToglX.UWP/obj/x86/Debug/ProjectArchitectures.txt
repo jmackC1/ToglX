@@ -1,2 +1,2 @@
-C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX.UWP\ToglX.UWP.csproj;x86
-C:\Users\justinm\documents\visual studio 2017\Projects\ToglX\ToglX\ToglX\ToglX.csproj;neutral
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\ToglX.UWP.csproj;x86
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\ToglX.csproj;neutral

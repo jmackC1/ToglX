@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToglX.MyView"
+             xmlns:pages="clr-namespace:ToglX;assembly=ToglX"
+             Title="TabbedPage">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Timer">
+        <StackLayout x:Name="timerStack" Spacing="3">
+            <Label HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="lblTime" Text="00:00"/>
+            <Button TextColor="White" BackgroundColor="Green" x:Name="btnTime" Text="START"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Manual Entry">
+        <StackLayout x:Name="ManStack" Spacing="3">
+            <Entry x:Name="descEntry" Placeholder="Entry Description" />
+            <Picker Title="Select Platform" x:Name="platPicker" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>WinForms</x:String>
+                    <x:String>ASP.NET WF</x:String>
+                    <x:String>ASP.NET MVC</x:String>
+                    <x:String>ActiveX</x:String>
+                    <x:String>WPF</x:String>
+                    <x:String>Xamarin</x:String>
+                    <x:String>UWP</x:String>
+                    <x:String>LightSwitch</x:String>
+                    <x:String>Silverlight</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="lvlPicker" Title="Service Level" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Platinum</x:String>
+                    <x:String>Standard</x:String>
+                    <x:String>Pre-Sales</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button TextColor="White" BackgroundColor="Red" Text="Submit" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="My Entries">
+        
+    </ContentPage>
+</TabbedPage>

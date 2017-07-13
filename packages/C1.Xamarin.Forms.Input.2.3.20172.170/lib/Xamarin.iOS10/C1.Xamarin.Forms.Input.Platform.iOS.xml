@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Input.Platform.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.iOS.C1InputRenderer">
+            <summary>
+            The render of C1Input controls.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1InputRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer">
+            <summary>
+            <see cref="T:C1.iOS.Input.C1MaskedTextField"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.GetNativeKeyboardType(Xamarin.Forms.Keyboard)">
+            <summary>
+            Change <see cref="T:Xamarin.Forms.Keyboard"/> to <see cref="T:UIKit.UIKeyboardType"/>.
+            </summary>
+            <param name="type">The <see cref="T:Xamarin.Forms.Keyboard"/> value.</param>
+            <returns>The <see cref="T:UIKit.UIKeyboardType"/>.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.GetFontAttributes(Xamarin.Forms.FontAttributes)">
+            <summary>
+            Change <see cref="T:Xamarin.Forms.FontAttributes"/> to <see cref="T:UIKit.UIFontDescriptorSymbolicTraits"/>.
+            </summary>
+            <param name="fontAttributes">The <see cref="T:Xamarin.Forms.FontAttributes"/> value.</param>
+            <returns>The <see cref="T:Xamarin.Forms.FontAttributes"/> value.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1MaskedTextFieldRenderer.GetTextAlignment(Xamarin.Forms.TextAlignment)">
+            <summary>
+            Change <see cref="T:Xamarin.Forms.TextAlignment"/> to <see cref="T:UIKit.UITextAlignment"/>.
+            </summary>
+            <param name="textAlignment">The <see cref="T:Xamarin.Forms.TextAlignment"/> value.</param>
+            <returns>The <see cref="T:UIKit.UITextAlignment"/> value.</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1ComboBox"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer.SizeThatFits(CoreGraphics.CGSize)">
+            <summary>
+            Returns the size that best fits this view.
+            </summary>
+            <param name="size">The current size of the view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1ComboBoxRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1DropDown"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer.SizeThatFits(CoreGraphics.CGSize)">
+            <summary>
+            Returns the size that best fits this view.
+            </summary>
+            <param name="size">The current size of the view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1DropDownRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1AutoComplete"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer.SizeThatFits(CoreGraphics.CGSize)">
+            <summary>
+            Returns the size that best fits this view.
+            </summary>
+            <param name="size">The current size of the view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.iOS.C1AutoCompleteRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+    </members>
+</doc>

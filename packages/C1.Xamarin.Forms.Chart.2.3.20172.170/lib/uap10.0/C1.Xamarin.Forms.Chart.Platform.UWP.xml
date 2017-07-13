@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Chart.Platform.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer">
+            <summary>
+            Render the XF Chart to Native chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer.CreateNativeElement">
+            <summary>
+            Create a native control.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer.InitializeNativeElement">
+            <summary>
+            Initialize native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexChartRenderer.FinalizeNativeElement">
+            <summary>
+            Finalize native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Platform.UWP.FlexPieRenderer">
+            <summary>
+            Render the XF Pie Chart to Native Pie chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexPieRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexPieRenderer.CreateNativeElement">
+            <summary>
+            Create a native control.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexPieRenderer.InitializeNativeElement">
+            <summary>
+            Initialize native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Platform.UWP.FlexPieRenderer.FinalizeNativeElement">
+            <summary>
+            Finalize native element.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Background" />
+    <RootPropertyPathName Name="DropDownBackground" />
+    <RootPropertyPathName Name="DropDownBorderColor" />
+    <RootPropertyPathName Name="DropDownBorderWidth" />
+    <RootPropertyPathName Name="DropDownWidth" />
+    <RootPropertyPathName Name="DropDownHeight" />
+    <RootPropertyPathName Name="MinDropDownHeight" />
+    <RootPropertyPathName Name="MaxDropDownHeight" />
+    <RootPropertyPathName Name="Padding" />
+    <RootPropertyPathName Name="CornerRadius" />
+    <RootPropertyPathName Name="ButtonForeground" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Color" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
+    <RootType FullName="Windows.UI.Xaml.CornerRadius" />
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ButtonBase" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalContentAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Visibility" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+      <RootProperty Name="Duration" />
+      <RootProperty Name="BeginTime" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="StrokeEndLineCap" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+    </RootType>
+    <RootType FullName="C1.UWP.Core.C1SideRadiusConverter" />
+    <RootType FullName="C1.UWP.Input.C1MaskedTextBox" />
+    <RootType FullName="C1.UWP.Input.C1TextBoxBase">
+      <RootProperty Name="FocusBrush" />
+      <RootProperty Name="MouseOverBrush" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FocusCuesVisibility" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="TextAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="ZoomMode" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.C1DropDown">
+      <RootProperty Name="ButtonForeground" />
+      <RootProperty Name="HeaderBackground" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="HeaderBorderColor" />
+      <RootProperty Name="HeaderBorderWidth" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.C1ComboBox">
+      <RootProperty Name="TextAlignment" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.C1TextEditableContentControl">
+      <RootProperty Name="SelectionBackground" />
+      <RootProperty Name="SelectionForeground" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.C1AutoComplete" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="BeginTime" />
+      <RootProperty Name="Duration" />
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.ComboBoxDropDownView">
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="DisplayMemberPath" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="C1.UWP.Core.C1ClearStyle">
+      <RootMethod Name="GetMouseOverBrush" />
+      <RootMethod Name="SetMouseOverBrush" />
+      <RootMethod Name="GetPressedBrush" />
+      <RootMethod Name="SetPressedBrush" />
+      <RootMethod Name="GetFocusBrush" />
+      <RootMethod Name="SetFocusBrush" />
+      <RootMethod Name="GetCornerRadius" />
+      <RootMethod Name="SetCornerRadius" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.ComboBoxHeaderView">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Glyph" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="C1.UWP.Input.ValidationState" />
+    <RootType FullName="C1.UWP.Input.C1ValidationDecorator">
+      <RootProperty Name="Target" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
+  </Roots.RootTypes>
+</Roots>

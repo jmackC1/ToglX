@@ -1,0 +1,3779 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Chart</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartAxis">
+            <summary>
+            Represents an axis in the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartAxis.#ctor">
+            <summary>
+            Creates an instance of ChartAxis class.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.InnerUpdating">
+            <summary>
+            Determines wheter it is changed by zoom or translate behaviors.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Title">
+            <summary>
+            Gets or sets the axis title.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.TitleProperty">
+            <summary>
+            Identifies the Title dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Labels">
+            <summary>
+            Gets or sets a value indicating whether to show axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.LabelsProperty">
+            <summary>
+            Backing field for Labels property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Position">
+            <summary>
+            Gets or sets the axis position.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.PositionProperty">
+            <summary>
+            Backing field for ChartPositionType property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Origin">
+            <summary>
+            Gets or sets the axis origin.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.OriginProperty">
+            <summary>
+            Backing field for Origin property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Reversed">
+            <summary>
+            Gets or sets a value indicating whether the axis is reversed.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.ReversedProperty">
+            <summary>
+            Backing field for Reversed property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.LabelAngle">
+            <summary>
+            Gets or sets the angle of rotation for axis labels. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.LabelAngleProperty">
+            <summary>
+            Backing field for LabelAngle property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Format">
+            <summary>
+            Gets or set formatting string for axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.FormatProperty">
+            <summary>
+            Backing field for Format property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MajorTickMarks">
+            <summary>
+            Gets or sets a value indicating the appearance of major tick marks.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MajorTickMarksProperty">
+            <summary>
+            Backing field for MajorTickMarks property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MajorGrid">
+            <summary>
+            Gets or set a value indicating whether to draw major grid.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MajorGridProperty">
+            <summary>
+            Backing field for MajorGrid property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MajorUnit">
+            <summary>
+            Gets or sets the distance betweem axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MajorUnitProperty">
+            <summary>
+            Backing field for MajorUnit property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MinorTickMarks">
+            <summary>
+            Gets or sets a value indicating the appearance of minor tick marks.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MinorTickMarksProperty">
+            <summary>
+            Backing field for MinorTickMarks property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MinorGrid">
+            <summary>
+            Gets or set a value indicating whether to draw minor grid.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MinorGridProperty">
+            <summary>
+            Backing field for MinorGrid property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MinorUnit">
+            <summary>
+            Gets or sets the distance between minor ticks and grid lines.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MinorUnitProperty">
+            <summary>
+            Backing field for MinorUnit property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.AxisLine">
+            <summary>
+            Gets or sets a value indicating whether to draw axis line.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.AxisLineProperty">
+            <summary>
+            Backing field for AxisLine property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Min">
+            <summary>
+            Gets or sets the axis minimum.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MinProperty">
+            <summary>
+            Backing field for Min property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Max">
+            <summary>
+            Gets or sets the axis maximum. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MaxProperty">
+            <summary>
+            Backing field for Max property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.LogBase">
+            <summary>
+            Gets or sets the base for logarithmic axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.LogBaseProperty">
+            <summary>
+            Backing field for the LogBase property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.LabelAlignment">
+            <summary>
+            Gets or sets the axis labels alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.LabelAlignmentProperty">
+            <summary>
+            Backing field for the LabelAlignment property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Style">
+            <summary>
+            Gets or sets the axis style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.TitleStyle">
+            <summary>
+            Gets or sets the axis title style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.TitleStyleProperty">
+            <summary>
+            Identifies the TitleStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MajorGridStyle">
+            <summary>
+            Gets or sets the style of axis major grid.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MajorGridStyleProperty">
+            <summary>
+            Identifies the MajorGridStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.MinorGridStyle">
+            <summary>
+            Gets or sets the style of axis minor grid.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.MinorGridStyleProperty">
+            <summary>
+            Identifies the MajorGridStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.OverlappingLabels">
+            <summary>
+            Gets or sets a value indicating how to handle the overlapping axis labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.OverlappingLabelsProperty">
+            <summary>
+            Identifies the ChartOverlappingLabels dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartAxis.Convert(System.Double)">
+            <summary>
+            Converts the specified value from data to pixel coordinate.
+            </summary>
+            <param name="val">The data value to convert.</param>
+            <returns>The corresponding value in control pixel coordinate.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartAxis.ConvertBack(System.Double)">
+            <summary>
+            Converts the specified value from control pixel to data coordinate.
+            </summary>
+            <param name="val">The value in control pixel coordinate.</param>
+            <returns>The corresponding data value.</returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.AxisType">
+            <summary>
+            Gets the axis type.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartAxis.AxisTypeProperty">
+            <summary>
+            Identifies axis type(X/Y) property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartAxis.Chart">
+            <summary>
+            Gets or sets the axis parent chart.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.DataLabelBase">
+            <summary>
+            Base class for chart data labels.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.DataLabelBase.#ctor">
+            <summary>
+            Creates an istance of DataLabelBase.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.Content">
+            <summary>
+            Gets or sets the content of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.ContentProperty">
+            <summary>
+            Identifies the Content dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.Border">
+            <summary>
+            Gets or sets a value indicating whether the label has border.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.BorderProperty">
+            <summary>
+            Identifies the Border dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether the data labels have a line connecting them with corresponding data point. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.ConnectingLineProperty">
+            <summary>
+            Identifies the ConnectingLine dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.Offset">
+            <summary>
+            Gets or sets the offset of data label from corresponding data point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.OffsetProperty">
+            <summary>
+            Identifies the Offset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.Style">
+            <summary>
+            Gets or sets the style of the label.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.DataLabelBase.BorderStyle">
+            <summary>
+            Gets or sets the border style of the label.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataLabelBase.BorderStyleProperty">
+            <summary>
+            Identifies the BorderStyle dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.DataLabelBase.Invalidate">
+            <summary>
+            Invalidates the parent chart.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartDataLabel">
+            <summary>
+            Represents chart data label.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartDataLabel.Position">
+            <summary>
+            Gets or sets the position of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartDataLabel.PositionProperty">
+            <summary>
+            Identifies the ChartPositionType dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartDataLabel.OnPositionPropertyChanged(C1.Xamarin.Forms.Chart.ChartLabelPosition,C1.Xamarin.Forms.Chart.ChartLabelPosition)">
+            <summary>
+            Fires when data label position property changes.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.PieDataLabel">
+            <summary>
+            Represents pie chart data label.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.PieDataLabel.Position">
+            <summary>
+            Gets or sets the position of data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.PieDataLabel.PositionProperty">
+            <summary>
+            Identifies the ChartPositionType dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartLegend.#ctor">
+            <summary>
+            Initializes a new instance of Legend class.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartSeries">
+            <summary>
+            Represents data series.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.#ctor">
+            <summary>
+            Create an instance of chart series.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.GetValues(System.Int32)">
+            <summary>
+            Gets the point data array for the specified coordinate dimension.
+            </summary>
+            <param name="dim">Specifies the dimension of data to retrieve (0=Y data, 1=X data, 2=Y1 data, ...)</param>
+            <returns>The point data array for the specified coordinate dimension</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.GetDataType(System.Int32)">
+            <summary>
+            Gets the data type by dimension index.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ActualBinding">
+            <summary>
+            Gets the actual binding.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ActualBindingX">
+            <summary>
+            Gets the actual x-binding.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ActualItemsSource">
+            <summary>
+            Gets the actual items source.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ActualChart">
+            <summary>
+            Gets the chart.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.MemberPaths">
+            <summary>
+            Gets the array of member bindings for the series.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.BindingX">
+            <summary>
+            Gets or sets the name of the property that contains X values for the series.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.BindingXProperty">
+            <summary>
+            Identifies the BindingX dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.Binding">
+            <summary>
+            Gets or sets the name of the property that contains Y values for the series.
+            </summary>
+            <remarks>
+            For complex chart types it may contain several names separated by commas.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.BindingProperty">
+            <summary>
+            Identifies the Binding dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ItemsSource">
+            <summary>
+            Gets or sets the collection of objects that contains the series data.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.ItemsSourceProperty">
+            <summary>
+            Identifies the ItemsSource dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.Style">
+            <summary>
+            Gets or sets the series style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.StyleProperty">
+            <summary>
+            Identifies the Style dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.AltStyle">
+            <summary>
+            Gets or sets the alternative series style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.AltStyleProperty">
+            <summary>
+            Identifies the AltStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.SymbolStyle">
+            <summary>
+            Gets or sets the series symbol style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.SymbolStyleProperty">
+            <summary>
+            Identifies the SymbolStyle dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartSeries.SymbolRendering">
+            <summary>
+            Fires before rendering symbol.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartSeries.SymbolRendered">
+            <summary>
+            Fires after rendering symbol.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.ChartType">
+            <summary>
+            Gets or sets the series chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.ChartTypeProperty">
+            <summary>
+            Identifies the ChartType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.Visibility">
+            <summary>
+            Gets or sets the series visibility.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.VisibilityProperty">
+            <summary>
+            Identifies the Visibility dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.SymbolMarker">
+            <summary>
+            Gets or sets the shape of marker to use for each data point in the series.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.SymbolMarkerProperty">
+            <summary>
+            Identifies the ChartMarkerType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.SymbolSize">
+            <summary>
+            Gets or sets the size(in pixels) of the symbols used to render this ChartSeries.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.SymbolSizeProperty">
+            <summary>
+            Identifies the SymbolSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.SeriesName">
+            <summary>
+            Gets or sets the series display name.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeries.SeriesNameProperty">
+            <summary>
+            Identifies the SeriesName dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.AxisX">
+            <summary>
+            Gets or sets the series x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.AxisY">
+            <summary>
+            Gets or sets the series y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartSeries.Chart">
+            <summary>
+            Gets or sets the series parent chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.ToString">
+            <summary>
+            Returns the string that represents the current series.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.OnPropertyChanged">
+            <summary>
+            Called on property changed.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.OnItemsSourcePropertyChanged">
+            <summary>
+            Called on ItemsSource changed.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.OnBindingPropertyChanged">
+            <summary>
+            Called when binding property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.OnVisiblityChanged">
+            <summary>
+            Called on visiblity property changed.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.SetStyle(C1.Xamarin.Forms.Chart._Style,System.String)">
+            <summary>
+            Set series style.
+            </summary>
+            <param name="style"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.GetStyle(System.String)">
+            <summary>
+            Get series style.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.OnItemsSourceChanged">
+            <summary>
+            Invoked when items source changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartSeries.Dispose">
+            <summary>
+            Disposes resources.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.SeriesEventArgs">
+            <summary>
+            Provides arguments for series-related event.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.SeriesEventArgs.Series">
+            <summary>
+            Gets the chart series.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartTooltip">
+            <summary>
+            Represents chart tooltip.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartTooltip.#ctor">
+            <summary>
+            Create an instance of chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartTooltip.Point">
+            <summary>
+            Gets or sets the display point of chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartTooltip.IsOpen">
+            <summary>
+            Gets or sets whether to display the chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartTooltip.Content">
+            <summary>
+             Gets or sets the content of the chart tooltip.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartTooltip.Padding">
+            <summary>
+             Gets or sets the padding of the chart tooltip.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartDataLabel">
+            <summary>
+            IChartDataLabel interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartDataLabel.Content">
+            <summary>
+            Gets or sets the label content.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartDataLabel.Position">
+            <summary>
+            Gets or sets the label position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartDataLabel.Border">
+            <summary>
+            Gets or sets a value indicating whether data labels have border.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartDataLabel.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether data labels have connecting lines.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartDataLabel.Offset">
+            <summary>
+            Gets or sets the offset of data label.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IPieDataLabel">
+            <summary>
+            IPieDataLabel interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieDataLabel.Content">
+            <summary>
+            Gets or sets the label content.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieDataLabel.Position">
+            <summary>
+            Gets or sets the label position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieDataLabel.Border">
+            <summary>
+            Gets or sets a value indicating whether data labels have border.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieDataLabel.ConnectingLine">
+            <summary>
+            Gets or sets a value indicating whether data labels have connecting lines.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieDataLabel.Offset">
+            <summary>
+            Gets or sets the offset of data label.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartHitTestInfo">
+            <summary>
+            Contains information about a part of a FlexChart control at
+            a specified coordinate.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartHitTestInfo.#ctor(C1.Xamarin.Forms.Chart.IChartBase,C1.Xamarin.Forms.Chart._Point,C1.Xamarin.Forms.Chart.ChartElementType)">
+             Initializes a new instance of a @see:ChartHitTestInfo object.
+            
+             @param chart The chart control.
+             @param point The original point in window coordinates.
+             @param element The chart element.
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartHitTestInfo.#ctor(C1.Xamarin.Forms.Chart.IChartBase)">
+             Initializes a new instance of a @see:ChartHitTestInfo object.
+            
+             @param chart The chart control.
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Point">
+            Gets the point in control coordinates to which this ChartHitTestInfo object
+            refers to.
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Series">
+            <summary>
+             Gets the chart series at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.PointIndex">
+            <summary>
+            Gets the data point index at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.ChartElement">
+            <summary>
+            Gets the chart element at the specified coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Distance">
+            <summary>
+            Gets the distance from the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Item">
+            <summary>
+            Gets the data object that corresponds to the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.X">
+            <summary>
+            Gets the x-value of the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Y">
+            <summary>
+            Gets the y-value of the closest data point.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartHitTestInfo.Percentage">
+            <summary>
+            Gets the percentage of the closest data point.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartAxis">
+            <summary>
+            IChartAxis interface.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartAxis.Convert(System.Double)">
+            <summary>
+            Converts from data to pixel coordinate.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartAxis.ConvertBack(System.Double)">
+            <summary>
+            Converts from pixel to data coordinate.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Position">
+            <summary>
+            Gets the axis position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.AxisType">
+            <summary>
+            Gets the axis type.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Origin">
+            <summary>
+            Gets the axis origin.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Reversed">
+            <summary>
+            Whether the axis is reversed.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Labels">
+            <summary>
+            Whether to draw labels.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MajorTickMarks">
+            <summary>
+            Gets the position of major tick marks.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MajorGrid">
+            <summary>
+            Whether to draw major grid.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MajorUnit">
+            <summary>
+            Gets the major unit.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MinorTickMarks">
+            <summary>
+            Gets the position of major tick marks.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MinorGrid">
+            <summary>
+            Whether to draw major grid.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.MinorUnit">
+            <summary>
+            Gets the major unit.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.LogBase">
+            <summary>
+            Gets the logarithmic base.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.AxisLine">
+            <summary>
+            Whether to draw axis line.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.LabelAlignment">
+            <summary>
+            Gets the label alignment.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.LabelAngle">
+            <summary>
+            Gets the label rotation angle.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Min">
+            <summary>
+            Gets the axis minimum.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Max">
+            <summary>
+            Gets the axis maximum.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartAxis.GetMin">
+            <summary>
+            Gets the actual minimum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartAxis.GetMax">
+            <summary>
+            Gets the actual maximum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Format">
+            <summary>
+            Gets the format of axis labels.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Title">
+            <summary>
+            Gets the axis title. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.OverlappingLabels">
+            <summary>
+            Gets or sets a value indicating how to handle the overlapping axis labels.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartAxis.Chart">
+            <summary>
+            Gets or sets the parent chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartAxis.FormatValue(System.Double)">
+            <summary>
+            Formats specified value.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartLegend">
+            <summary>
+            IChartLegend interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartLegend.Position">
+            <summary>
+            Gets or sets the legend position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartLegend.Title">
+            <summary>
+            Gets the legend title.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartLegend.Orientation">
+            <summary>
+            Gets the legend orientation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartSeries">
+            <summary>
+            IChartSeries interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.ChartType">
+            <summary>
+            Gets or sets the chart type.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.Visibility">
+            <summary>
+            Gets or sets the series visibility.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.Name">
+            <summary>
+            Gets or sets the series name.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.AxisX">
+            <summary>
+            Gets or sets the series x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.AxisY">
+            <summary>
+            Gets or sets the series y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.Chart">
+            <summary>
+            Gets or sets the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartSeries.GetValues(System.Int32)">
+            <summary>
+            Gets the data values.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartSeries.GetDataType(System.Int32)">
+            <summary>
+            Gets the data type.
+            </summary>
+            <param name="dim"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.SymbolSize">
+            <summary>
+            Gets the series symbol size.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.SymbolMarker">
+            <summary>
+            Gets the series symbol marker.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartSeries.GetItem(System.Int32)">
+            <summary>
+            Gets the data item by index. 
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.HasCustomSymbol">
+            <summary>
+            Whether the series has custom symbol rendering.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartSeries.OnSymbolRendering(C1.Xamarin.Forms.Core.IRenderEngine,System.Int32,System.Double,System.Double)">
+            <summary>
+            Called before rendering symbol. 
+            </summary>
+            <param name="engine">Render engine,</param>
+            <param name="i">Index of data point.</param>
+            <param name="x">X pixel coordinate.</param>
+            <param name="y">Y pixel coordinate.</param>
+            <returns>Whether to perform default symbol rendering.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartSeries.OnSymbolRendered(C1.Xamarin.Forms.Core.IRenderEngine,System.Int32,System.Double,System.Double)">
+            <summary>
+            Called after rendering symbol. 
+            </summary>
+            <param name="engine">Render engine,</param>
+            <param name="i">Index of data point.</param>
+            <param name="x">X pixel coordinate.</param>
+            <param name="y">Y pixel coordinate.</param>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.DataSource">
+            <summary>
+            Gets or sets data source.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.Binding">
+            <summary>
+            Gets or sets the binding.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartSeries.BindingX">
+            <summary>
+            Gets or sets the x-binding.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartOptions">
+            <summary>
+            Represents chart options.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartOptions.#ctor">
+            <summary>
+            Creates an instance of ChartOptions.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartOptions.InterpolateNulls">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOptions.InterpolateNullsProperty">
+            <summary>
+            Identifies the InterpolateNulls dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartOptions.ClusterSize">
+            <summary>
+            Gets or sets the cluster size.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOptions.ClusterSizeProperty">
+            <summary>
+            Identifies the ClusterSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartOptions.BubbleMinSize">
+            <summary>
+            Gets or sets the minimal symbol size for bubble chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOptions.BubbleMinSizeProperty">
+            <summary>
+            Identifies the BubbleMinSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartOptions.BubbleMaxSize">
+            <summary>
+            Gets or sets the maximum symbol size for bubble chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOptions.BubbleMaxSizeProperty">
+            <summary>
+            Identifies the BubbleMaxSize dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartStyle">
+            <summary>
+            Represents visual style of chart element.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.DefaultValueFontSize">
+            <summary>
+            Default font size.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.DefaultBrush">
+            <summary>
+            Default brush.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.DefaultSelectionBrush">
+            <summary>
+            Default selection brush of datapoints border when select the datapoints.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.FontSize">
+            <summary>
+            Gets or sets the font size.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.FontSizeProperty">
+            <summary>
+            Identifies the FontSize dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.FontFamily">
+            <summary>
+            Gets or sets the font family.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.FontFamilyProperty">
+            <summary>
+            Identifies the FontFamily dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.FontAttributes">
+            <summary>
+            Gets or sets the font attributes.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.FontAttributesProperty">
+            <summary>
+            Identifies the FontAttributes dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.StrokeDashArray">
+            <summary>
+            Gets or sets the stroke dash array.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.StrokeDashArrayProperty">
+            <summary>
+            Identifies the StrokeDashArray dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.Stroke">
+            <summary>
+            Gets or sets the stroke brush.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.StrokeProperty">
+            <summary>
+            Identifies the Stroke dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.Fill">
+            <summary>
+            Gets or sets the fill brush.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.FillProperty">
+            <summary>
+            Identifies the Fill dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartStyle.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStyle.StrokeThicknessProperty">
+            <summary>
+            Identifies the StrokeThickness dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartStyle.#ctor">
+            <summary>
+            Create an instance of ChartStyle.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.AnnotationAttachment">
+            <summary>
+            Specifies the attachment of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationAttachment.DataIndex">
+            <summary>
+            Coordinates of the annotation point are defined by the data series index and 
+            the data point index.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationAttachment.DataCoordinate">
+            <summary>
+            Annotation point is specified in data coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationAttachment.Relative">
+            <summary>
+            Annotation point is specified as a relative position inside the control where
+            (0,0) is the top left corner and (1,1) is the bottom right corner.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationAttachment.Absolute">
+            <summary>
+            The annotation point is specified in control's pixel coordinates.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition">
+            <summary>
+            Specifies the position of the annotation.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition.Center">
+            <summary>
+            The annotation appears at the Center of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition.Top">
+            <summary>
+            The annotation appears at the Top of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition.Bottom">
+            <summary>
+            The annotation appears at the Bottom of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition.Left">
+            <summary>
+            The annotation appears at the Left of the target point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Annotation.AnnotationPosition.Right">
+            <summary>
+            The annotation appears at the Right of the target point.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase">
+            <summary>
+            IBaseAnnotation interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.Attachment">
+            <summary>
+            Gets or sets the attachment of the annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.Position">
+            <summary>
+            Gets or sets the position of annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.Location">
+            <summary>
+            Gets or sets the location of annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.PointIndex">
+            <summary>
+            Gets or sets the data point index of the annotation.
+            Applies only when the <see cref="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.Attachment"/> property is set to DataIndex.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.SeriesIndex">
+            <summary>
+            Gets or sets the data series index of the annotation.
+            Applies only when the <see cref="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.Attachment"/> is set to DataIndex.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.TooltipText">
+            <summary>
+            Gets or sets the tooltip of the annotation.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Annotation.IAnnotationBase.GetSize">
+            <summary>
+            Gets the size of the annotation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IAnnotationLayer">
+            <summary>
+            Annotation layer interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IAnnotationLayer.Annotations">
+            <summary>
+            Gets the annotation collection.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.ICircle">
+            <summary>
+            ICircle interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.ICircle.Radius">
+            <summary>
+            Gets or sets the radius of circle annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IEllipse">
+            <summary>
+            IEllipse interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IEllipse.Width">
+            <summary>
+            Gets or sets the width of ellipse annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IEllipse.Height">
+            <summary>
+            Gets or sets the height of ellipse annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IImage">
+            <summary>
+            IImage interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IImage.SourceImage">
+            <summary>
+            Gets or sets the source of image annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IImage.Width">
+            <summary>
+            Gets or sets the width of image annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IImage.Height">
+            <summary>
+            Gets or sets the height of image annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.ILine">
+            <summary>
+            ILine interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.ILine.Start">
+            <summary>
+            Gets or sets the start point of line annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.ILine.End">
+            <summary>
+            Gets or sets the end point of line annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IPolygon">
+            <summary>
+            IPolygon interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IPolygon.Points">
+            <summary>
+            Gets the collection of points of the polygon annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IRectangle">
+            <summary>
+            IRectangle interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IRectangle.Width">
+            <summary>
+            Gets or sets the width of rectangle annotation.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IRectangle.Height">
+            <summary>
+            Gets or sets the height of rectangle annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IShape">
+            <summary>
+            IShape interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IShape.Content">
+            <summary>
+            Gets or sets the text of shape annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.ISquare">
+            <summary>
+            ISquare interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.ISquare.Length">
+            <summary>
+            Gets or sets the length of the square annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Annotation.IText">
+            <summary>
+            IText interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Annotation.IText.Content">
+            <summary>
+            Gets or sets the text of the annotation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartType">
+            <summary>
+            Specifies the chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Column">
+            <summary>
+            Shows vertical bars.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Bar">
+            <summary>
+            Shows horizontal bars.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Line">
+            <summary>
+            Shows trends over a period of time or across categories.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Scatter">
+            <summary>
+            Shows patterns within the data using X and Y coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.LineSymbols">
+            <summary>
+            Shows line chart with a symbol on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Area">
+            <summary>
+            Shows line chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Spline">
+            <summary>
+            Displays line chart that plots curves rather than angled lines through the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.SplineSymbols">
+            <summary>
+            Displays spline chart with symbols on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.SplineArea">
+            <summary>
+            Displays spline chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Bubble">
+            <summary>
+            Shows Scatter chart with a third data value that determines the size of the symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.Candlestick">
+            <summary>
+            Presents items with high, low, open, and close values.
+            The size of the wick line is determined by the High and Low values, 
+            while the size of the bar is determined by the Open and Close values. 
+            The bar is displayed using different colors, depending on 
+            whether the close value is higher or lower than the open value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartType.HighLowOpenClose">
+            <summary>
+            Displays the same information as a candlestick chart, except that opening 
+            values are displayed using lines to the left, while lines to the right
+            indicate closing values.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartStackingType">
+            <summary>
+            Specifies whether and how to stack the chart's data values.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStackingType.None">
+            <summary>
+            No stacking. Each series object is plotted independently.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStackingType.Stacked">
+            <summary>
+            Stacked charts show how each value contributes to the total.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartStackingType.Stacked100pc">
+            <summary>
+            100% stacked charts show how each value contributes to the total with the relative size of
+            each series representing its contribution to the total.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartSeriesVisibilityType">
+            <summary>
+            Specifies whether and where the ChartSeries is visible.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeriesVisibilityType.Visible">
+            <summary>
+            The series is visible on the plot and in the legend.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeriesVisibilityType.Plot">
+            <summary>
+            The series is visible only on the plot.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeriesVisibilityType.Legend">
+            <summary>
+            The series is visible only in the legend.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSeriesVisibilityType.Hidden">
+            <summary>
+            The series is hidden.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.DataType">
+            <summary>
+            Specifies chart data type
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataType.Number">
+            <summary>
+            Numeric data.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.DataType.Date">
+            <summary>
+            Date or time data.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartElementType">
+            <summary>
+            Specifies chart element that may be found by the HitTest method.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.PlotArea">
+            <summary>
+            The area within the axes.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.AxisX">
+            <summary>
+            X-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.AxisY">
+            <summary>
+            Y-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.ChartArea">
+            <summary>
+            The area within the control but outside the axes.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.Legend">
+            <summary>
+            The chart legend.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.Header">
+            <summary>
+            The chart header.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.Footer">
+            <summary>
+            The chart footer.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.Series">
+            <summary>
+            A chart series.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.SeriesSymbol">
+            <summary>
+            A chart series symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.DataLabel">
+            <summary>
+            A data label.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartElementType.None">
+            <summary>
+            No chart element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartLabelPosition">
+            <summary>
+            Specifies chart data label position.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.None">
+            <summary>
+            No data labels appear.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.Left">
+            <summary>
+            The labels appear to the left of the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.Top">
+            <summary>
+            The labels appear above the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.Right">
+            <summary>
+            The labels appear to the right of the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.Bottom">
+            <summary>
+            The labels appear below the data points.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartLabelPosition.Center">
+            <summary>
+            The labels appear centered on the data points.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.PieLabelPosition">
+            <summary>
+            Specifies the position of data labels on the pie chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.PieLabelPosition.None">
+            <summary>
+            No data labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.PieLabelPosition.Inside">
+            <summary>
+            The label appears inside the pie slice.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.PieLabelPosition.Center">
+            <summary>
+            The item appears at the center of the pie slice.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.PieLabelPosition.Outside">
+            <summary>
+            The item appears outside the pie slice.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartSelectionModeType">
+            <summary>
+            Available selection modes.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSelectionModeType.None">
+            <summary>
+            Selection is disabled.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSelectionModeType.Series">
+            <summary>
+            ChartSeries selection.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartSelectionModeType.Point">
+            <summary>
+            Point selection.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ElementSizeType">
+            <summary>
+            Specifies the size type for ElementSize object.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ElementSizeType.Percentage">
+            <summary>
+            Size specified in perecents from available space.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ElementSizeType.Absolute">
+            <summary>
+            Size specified in pixels.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartMarkerType">
+            <summary>
+            Specifies the type of marker to use for the ChartMarkerType property.
+            Applies to Scatter, LineSymbols, and SplineSymbols chart types.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartMarkerType.Dot">
+            <summary>
+            Uses a circle to mark each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartMarkerType.Box">
+            <summary>
+            Uses a square to mark each data point.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ElementSize">
+            <summary>
+            Represents element size.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ElementSize.SizeType">
+            <summary>
+            Gets or sets the size type.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ElementSize.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ElementSize.op_Equality(C1.Xamarin.Forms.Chart.ElementSize,C1.Xamarin.Forms.Chart.ElementSize)">
+            <summary>
+            
+            </summary>
+            <param name="size1"></param>
+            <param name="size2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ElementSize.op_Inequality(C1.Xamarin.Forms.Chart.ElementSize,C1.Xamarin.Forms.Chart.ElementSize)">
+            <summary>
+            
+            </summary>
+            <param name="size1"></param>
+            <param name="size2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ElementSize.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to the current object.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ElementSize.GetHashCode">
+            <summary>
+            Returns hash code of the instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartOverlappingLabels">
+            <summary>
+            Specifies how to handle overlapping labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOverlappingLabels.Auto">
+            <summary>
+            Hide overlapping labels.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartOverlappingLabels.Show">
+            <summary>
+            Show all labels, including overlapping ones.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.MeasureOption">
+            <summary>
+            Specifies measuring direction.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MeasureOption.X">
+            <summary>
+            By X-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MeasureOption.Y">
+            <summary>
+            By Y-axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MeasureOption.XY">
+            <summary>
+            Both X- and Y- axes.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.FitType">
+            <summary>
+            Specifies fit type for trend line.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Linear">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1*x.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Polynom">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1*x + C2*x2 + : + Cn-1*xn-1, where n - number of terms.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Exponent">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * exp( C1*x)
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Logarithmic">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * ln(C1*x)
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Power">
+            <summary>
+            Regression fit to the equation Y(x) = C0 * pow(x, C1)
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.Fourier">
+            <summary>
+            Regression fit to the equation Y(x) = C0 + C1 * cos(x) + C2 * sin(x) + C3 * cos(2*x) + C4 * sin(2*x) + ...
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.MinX">
+            <summary>
+            Minimal X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.MinY">
+            <summary>
+            Minimal Y-value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.MaxX">
+            <summary>
+            Maximum X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.MaxY">
+            <summary>
+            Maximum Y-value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.AverageX">
+            <summary>
+            Average X-value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FitType.AverageY">
+            <summary>
+            Average Y-value.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.MovingAverageType">
+            <summary>
+            Specifies the type of MovingAverage ChartSeries. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MovingAverageType.Simple">
+            <summary>
+            An average of the last n values.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MovingAverageType.Weighted">
+            <summary>
+            Weighted average of the last n values, where the weightage decreases by 1 with each previous value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MovingAverageType.Exponential">
+            <summary>
+            Weighted average of the last n values, where the weightage decreases exponentially with each previous value.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.MovingAverageType.Triangular">
+            <summary>
+            Weighted average of the last n values, whose result is equivalent to a double smoothed simple moving average.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Orientation">
+            <summary>
+            Specifies the orientation of chart element.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Orientation.Auto">
+            <summary>
+            Orientation is selected automatically.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Orientation.Horizontal">
+            <summary>
+            Horizontal orientation.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Orientation.Vertical">
+            <summary>
+            Vertical orientation.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.RadarChartType">
+            <summary>
+            Specifies the chart type for FlexRadar control.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RadarChartType.Line">
+            <summary>
+            Shows trends over a period of time or across categories.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RadarChartType.Scatter">
+            <summary>
+            Shows patterns within the data using X and Y coordinates.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RadarChartType.LineSymbols">
+            <summary>
+            Shows line chart with a symbol on each data point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RadarChartType.Area">
+            <summary>
+            Shows line chart with the area below the line filled with color.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartPositionType">
+            <summary>
+            Specifies the position of chart element on the chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.Left">
+            <summary>
+            The element appears to the left.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.Right">
+            <summary>
+            The element appears to the right.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.Top">
+            <summary>
+            The item appears above.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.Bottom">
+            <summary>
+            The item appears below.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.Auto">
+            <summary>
+            The element is positioned automatically.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartPositionType.None">
+            <summary>
+            The element is not visible.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartTickMarkType">
+            <summary>
+            Specifies whether and where the axis tick marks appear.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartTickMarkType.None">
+            <summary>
+            No tick marks appear.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartTickMarkType.Outside">
+            <summary>
+            Tick marks appear outside the plot area.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartTickMarkType.Inside">
+            <summary>
+            Tick marks appear inside the plot area.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartTickMarkType.Cross">
+            <summary>
+            Tick marks cross the axis.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.AxisLabelAlignment">
+            <summary>
+            Specifies axis label position.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisLabelAlignment.Center">
+            <summary>
+            At the center.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisLabelAlignment.Left">
+            <summary>
+            At the left.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisLabelAlignment.Right">
+            <summary>
+            At the right.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisLabelAlignment.Top">
+            <summary>
+            At the top.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisLabelAlignment.Bottom">
+            <summary>
+            At the bottom.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.AxisType">
+            <summary>
+            Specifies axis type. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisType.X">
+            <summary>
+            X-axis, horizontal.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.AxisType.Y">
+            <summary>
+            Y-axis, vertical.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IBrushConverter">
+            <summary>
+            Brush converter interface
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IBrushConverter.Convert(System.Object)">
+            <summary>
+            Converts brush to string.
+            </summary>
+            <param name="brush"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IBrushConverter.ConvertBack(System.String)">
+            <summary>
+            Converts string to brush.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartBase">
+            <summary>
+            IChartBase interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartBase.Legend">
+            <summary>
+            Gets the chart legend.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartBase.Header">
+            <summary>
+            Gets the chart header.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartBase.Footer">
+            <summary>
+            Gets the chart footer,
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartBase.SelectedIndex">
+            <summary>
+            Gets the selected index.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartBase.SelectionMode">
+            <summary>
+            Gets the selection mode.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartBase.OnRendering(C1.Xamarin.Forms.Core.IRenderEngine,System.Double,System.Double)">
+            <summary>
+            Invoked before chart starts rendering.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartBase.OnRendered(C1.Xamarin.Forms.Core.IRenderEngine,System.Double,System.Double)">
+            <summary>
+            Invoked after chart finishes rendering.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChartBase.GetMargin">
+            <summary>
+            Gets the plot margin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChart">
+            <summary>
+            IChart interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.ChartType">
+            <summary>
+            Gets the chart type.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.Stacking">
+            <summary>
+            Gets the chart stacking.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.AxisX">
+            <summary>
+            Gets the main x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.AxisY">
+            <summary>
+            Gets the main y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.DataLabel">
+            <summary>
+            Gets the chart data label.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.GetAxes">
+            <summary>
+            Gets the chart axes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.Series">
+            <summary>
+            Gets the series list.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChart.SelectedSeries">
+            <summary>
+            Gets the selected series.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.GetPlotMargin">
+            <summary>
+            Gets the plot margin.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.IsRotated">
+            <summary>
+            Gets a value indicating whether the chart is rotated.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.GetXItems">
+            <summary>
+            Gets the list of x-axis items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.GetOption(System.String)">
+            <summary>
+            Gets the chart option.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.OnRenderingData(C1.Xamarin.Forms.Core.IRenderEngine)">
+            <summary>
+            Invoked before chart data starts rendering.
+            </summary>
+            <param name="engine"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IChart.CreateSeries">
+            <summary>
+            Creates an instance of series.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ISupportCustomRenderEngine">
+            <summary>
+            Support of external render engines.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ISupportCustomRenderEngine.Attach(C1.Xamarin.Forms.Chart.ICustomRenderEngine)">
+            <summary>
+            Attaches external render engine.
+            </summary>
+            <param name="engine"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ISupportCustomRenderEngine.Render(C1.Xamarin.Forms.Core.IRenderEngine,System.Int32,System.Int32)">
+            <summary>
+            Render the chart to external render engine.
+            </summary>
+            <param name="engine"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ISupportCustomRenderEngine.Detach">
+            <summary>
+            Detaches external render engine.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ICustomRenderEngine">
+            <summary>
+            External render engine interface.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ICustomRenderEngine.Attach(C1.Xamarin.Forms.Chart.IChart)">
+            <summary>
+            Attach render engine to the chart.
+            </summary>
+            <param name="chart"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ICustomRenderEngine.Detach">
+            <summary>
+            Detach render engine from chart.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IRadarChart">
+            <summary>
+            Radar chart interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IRadarChart.Center">
+            <summary>
+            Gets the center.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IRadarChart.Convert(C1.Xamarin.Forms.Chart._Point)">
+            <summary>
+            Converts the point.
+            </summary>
+            <param name="pt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IRadarChart.ConvertAngle(System.Double)">
+            <summary>
+            Converts the angle.
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IRadarChart.Radius">
+            <summary>
+            Gets the radius.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IRadarChart.StartAngle">
+            <summary>
+            Gets or sets the starting angle.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IRadarChart.Reversed">
+            <summary>
+            Whether the chart is reversed.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IRadarChart.IsPolar">
+            <summary>
+            Whether the chart is polar.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IPieChart">
+            <summary>
+            Interface of pie chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IPieChart.GetValues">
+            <summary>
+            Gets pie slices values
+            </summary>
+            <returns>Pie slices values</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IPieChart.GetNames">
+            <summary>
+            Gets pie slices names
+            </summary>
+            <returns>Pie slices names</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IPieChart.GetItem(System.Int32)">
+            <summary>
+            Gets pie one slice data item.
+            </summary>
+            <param name="i">The index of the slices</param>
+            <returns>Slice data item</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IPieChart.GetLegendLabels">
+            <summary>
+            Gets legend labels.
+            </summary>
+            <returns>Legend labels</returns>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.StartAngle">
+            <summary>
+            Gets start angle.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.InnerRadius">
+            <summary>
+            Gets inner circle radius
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.SelectedItemPosition">
+            <summary>
+            Gets the selected item index.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.SelectedItemOffset">
+            <summary>
+            Gets selected item offset from the original position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.Offset">
+            <summary>
+            Gets offset from the original position.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.Reversed">
+            <summary>
+            Gets a bool value that indicated revered or not.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IPieChart.DataLabel">
+            <summary>
+            Gets the data label object of the pie.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IStyleProvider">
+            <summary>
+            IStyle provider interface.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IStyleProvider.GetStyle(System.String)">
+            <summary>
+            Gets the style by name.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IStyleProvider.SetStyle(C1.Xamarin.Forms.Chart._Style,System.String)">
+            <summary>
+            Sets style with specified name.
+            </summary>
+            <param name="style"></param>
+            <param name="name"></param>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IWaterfall">
+            <summary>
+            IWaterfall interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.ConnectorLines">
+            <summary>
+            Gets or sets a value that determines whether to show connector lines.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.IntermediateTotalLabels">
+            <summary>
+            Gets or sets the value of the property that contains the label of the intermediate total bar, it should be an array or a string.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.IntermediateTotalPositions">
+            <summary>
+            Gets or sets the value of the property that contains the index for positions of the intermediate total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.RelativeData">
+            <summary>
+            Gets or sets a value that determines whether the given data is relative.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.ShowIntermediateTotal">
+            <summary>
+            Gets or sets a value that determines whether to show the intermediate total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.ShowTotal">
+            <summary>
+            Gets or sets a value that determines whether show total bar.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.Start">
+            <summary>
+            Gets or sets a value that determines the value of the start bar.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.StartLabel">
+            <summary>
+            Identifies the Start dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IWaterfall.TotalLabel">
+            <summary>
+            Gets or sets the label of the total bar.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.GetYValues">
+            <summary>
+            Gets the list of y axis values.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.IsIntermediateTotal(System.Int32)">
+            <summary>
+            Checks whether the item is intermediate total or not.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.UpdateXItems(System.Collections.Generic.List{System.Object})">
+            <summary>
+            Updates the list of x axis items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.GetLegendItemsCount">
+            <summary>
+            Gets the count of legend items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.GetLegendItemName(System.Int32)">
+            <summary>
+            Gets the name of legend item.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IWaterfall.GetLegendStyles(System.Int32)">
+            <summary>
+            Gets the style of legend item.
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.LeastSquaresMethod">
+            <summary>
+            Contains routines for Least Squares Method
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IPalette">
+            <summary>
+            IPalette interface.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.IPalette.GetColor(System.Int32)">
+            <summary>
+            Gets the palette color by index.
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Palette">
+            <summary>
+            Specifies chart palette.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Standard">
+            <summary>
+            Standard.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Cocoa">
+            <summary>
+            Cocoa
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Coral">
+            <summary>
+            Coral
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Dark">
+            <summary>
+            Dark
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Highcontrast">
+            <summary>
+            Highcontrast
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Light">
+            <summary>
+            Light
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Midnight">
+            <summary>
+            Midnight
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Minimal">
+            <summary>
+            Minimal
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Modern">
+            <summary>
+            Modern
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Organic">
+            <summary>
+            Organic
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Slate">
+            <summary>
+            Slate
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Zen">
+            <summary>
+            Zen
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Cyborg">
+            <summary>
+            Cyborg
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Superhero">
+            <summary>
+            Superhero
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Flatly">
+            <summary>
+            Flatly
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Darkly">
+            <summary>
+            Darkly
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Cerulean">
+            <summary>
+            Cerulean
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Palette.Custom">
+            <summary>
+            Custom palette.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart._Rect">
+            <summary>
+            Represents rectangle.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Rect.Left">
+            <summary>
+            Left coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Rect.Top">
+            <summary>
+            Top coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Rect.Width">
+            <summary>
+            Width of rectangle.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Rect.Height">
+            <summary>
+            Height of rectangle.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Rect.Right">
+            <summary>
+            Gets the right coordinate of rectangle.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Rect.Bottom">
+            <summary>
+            Gets the bottom coordinate of rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Create an instance of rectangle.
+            </summary>
+            <param name="l"></param>
+            <param name="t"></param>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.Contains(System.Double,System.Double)">
+            <summary>
+            Returns whether the point specified by coordinates is inside rectangle.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Rect.Empty">
+            <summary>
+            Empty rectangle.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.op_Equality(C1.Xamarin.Forms.Chart._Rect,C1.Xamarin.Forms.Chart._Rect)">
+            <summary>
+            Equality operator. 
+            </summary>
+            <param name="rect1"></param>
+            <param name="rect2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.op_Inequality(C1.Xamarin.Forms.Chart._Rect,C1.Xamarin.Forms.Chart._Rect)">
+            <summary>
+            Non-equality operator.
+            </summary>
+            <param name="rect1"></param>
+            <param name="rect2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.Equals(System.Object)">
+            <summary>
+            Determines whether the specified object is equal to this instance. 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.GetHashCode">
+            <summary>
+            Returns the hash code of the instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.Intersect(C1.Xamarin.Forms.Chart._Rect)">
+            <summary>
+            Returns a value indicating whether the rectangle intersects with the specified rectangle.
+            </summary>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Rect.ToString">
+            <summary>
+            Output left, top, right, bottom as string.
+            </summary>
+            <returns>[Left, Top, Right, Bottom]</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart._Size">
+            <summary>
+            Represents size.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Size.Width">
+            <summary>
+            Width.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Size.Height">
+            <summary>
+            Height
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Size.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates am instance of _Size.
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Size.ToString">
+            <summary>
+            Output width and height.
+            </summary>
+            <returns>[Width, Height]</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart._Margin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Margin.Left">
+            <summary>
+            Left margin.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Margin.Right">
+            <summary>
+            Right margin.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Margin.Top">
+            <summary>
+            Top margin.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Margin.Bottom">
+            <summary>
+            Bottom margin.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Margin.Apply(C1.Xamarin.Forms.Chart._Rect)">
+            <summary>
+            Applies margin to specified rectangle.
+            </summary>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart._Point">
+            <summary>
+            Represents point.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Point.X">
+            <summary>
+            X-coordinate.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart._Point.Y">
+            <summary>
+            Y-coordinate.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Point.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates an instance of _Point.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Point.Clone">
+            <summary>
+            Clones the specified point.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Point.ToString">
+            <summary>
+            Output X, Y as string.
+            </summary>
+            <returns>[X, Y]</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart._Style">
+            <summary>
+            Represent style.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.Stroke">
+            <summary>
+            Gets or sets the stroke object.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.StrokePattern">
+            <summary>
+            Gets or sets the stroke pattern.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.Fill">
+            <summary>
+            Gets or sets the fill object.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.Font">
+            <summary>
+            Gets or sets the font object.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart._Style.HAlign">
+            <summary>
+            Gets or sets horizontal alignment.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart._Style.Combine(C1.Xamarin.Forms.Chart._Style)">
+            <summary>
+            Combines styles.
+            </summary>
+            <param name="parentStyle"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.FlexChart">
+            <summary>
+            FlexChart control.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.#ctor">
+            <summary>
+            Creates an instance of FlexChart.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.ChartType">
+            <summary>
+            Gets or sets the chart type.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.ChartTypeProperty">
+            <summary>
+            Identifies the ChartType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Stacking">
+            <summary>
+            Gets or sets the chart stacking.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.StackingProperty">
+            <summary>
+            Identifies the ChartStackingType dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Rotated">
+            <summary>
+            Gets or sets a value indicating whether the chart is rotated.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.RotatedProperty">
+            <summary>
+            Identifies the Rotated dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.BindingX">
+            <summary>
+            Gets or sets the bindingX of chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.BindingXProperty">
+            <summary>
+            Identifies the BindingX dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.PlotMargin">
+            <summary>
+            Gets or sets the plot area margin.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.PlotMarginProperty">
+            <summary>
+            Identifies the PlotMargin dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.AxisX">
+            <summary>
+            Gets or sets the main chart x-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.AxisY">
+            <summary>
+            Gets or sets the main chart y-axis.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Options">
+            <summary>
+            Gets or sets the chart options.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.OptionsProperty">
+            <summary>
+            Identifies the Options dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Series">
+            <summary>
+            Gets the series collection.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Behaviors">
+            <summary>
+            Gets the behaviors collection.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.Layers">
+            <summary>
+            Gets the chart layers collection.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.SelectedSeries">
+            <summary>
+            Gets or sets the selected series.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexChart.SelectedSeriesProperty">
+            <summary>
+            Identifies the SelectedSeries dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexChart.DataLabel">
+            <summary>
+            Gets or sets the data label.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.FlexChart.SeriesVisibilityChanged">
+            <summary>
+            Fires when chart series visibility was changed.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.HitTest(Xamarin.Forms.Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.PointToData(Xamarin.Forms.Point)">
+            <summary>
+            Converts a Point from control coordinates to chart data coordinates.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>The point in chart data coordinates.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.DataToPoint(Xamarin.Forms.Point)">
+            <summary>
+            Converts a Point from data coordinates to control coordinates.
+            </summary>
+            <param name="pt">Point in data coordinates.</param>
+            <returns>Point in control coordinates.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.OptionsChanged">
+            <summary>
+            Called when options changed.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.OnChartTypePropertyChanged(C1.Xamarin.Forms.Chart.ChartType,C1.Xamarin.Forms.Chart.ChartType)">
+            <summary>
+            Fires when chartType property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.OnStackingPropertyChanged(C1.Xamarin.Forms.Chart.ChartStackingType,C1.Xamarin.Forms.Chart.ChartStackingType)">
+            <summary>
+            Fires when stacking property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.OnRotatedPropertyChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Fires when rotated property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexChart.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.RenderMode">
+            <summary>
+            Enumerates available render modes.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RenderMode.Default">
+            <summary>
+            Xaml.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.RenderMode.Direct2D">
+            <summary>
+            Direct2D render mode.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.BaseRenderEventArgs">
+            <summary>
+            Base render event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.BaseRenderEventArgs.Engine">
+            <summary>
+            Gets the rendering engine.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.RenderEventArgs">
+            <summary>
+            Render event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.RenderEventArgs.Width">
+            <summary>
+            Gets the control width.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.RenderEventArgs.Height">
+            <summary>
+            Gets the control height.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.RenderSymbolEventArgs">
+            <summary>
+            Render symbol event arguments.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.RenderSymbolEventArgs.Point">
+            <summary>
+            Gets the symbol position in control pixel coordinates.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.RenderSymbolEventArgs.Index">
+            <summary>
+            Gets the data point index.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.RenderSymbolEventArgs.Item">
+            <summary>
+            Gets the data item.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.ChartBase">
+            <summary>
+            Base class for FlexChart and FlexPie controls.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase._updating">
+            <summary>
+            Update count.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase._dataChanged">
+            <summary>
+            Data changed flag.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.selectionDistance">
+            <summary>
+            Selection distance.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.#ctor">
+            <summary>
+            Creates an instance of ChartBase.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.License">
+            <summary>
+            License.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.Palette">
+            <summary>
+            Gets or sets the chart palette.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.ShowTooltip">
+            <summary>
+            Gets or sets the ShowTooltip.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.PaletteProperty">
+            <summary>
+            Identifies the Palette dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.ShowTooltipProperty">
+            <summary>
+            Identifies the ShowTooltip dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.SelectionMode">
+            <summary>
+            Gets or sets the chart selection mode.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.SelectionModeProperty">
+            <summary>
+            Identifies the SelectionMode dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.SelectedIndex">
+            <summary>
+            Gets or sets the index of selected element.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.SelectedIndexProperty">
+            <summary>
+            Identifies the SelectedIndex dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.SelectionStyle">
+            <summary>
+            Gets or sets the style of selected element.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.SelectionStyleProperty">
+            <summary>
+            Identifies the SelectionStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.Binding">
+            <summary>
+            Gets or sets the name of the property that contains Y values for the series.
+            </summary>
+            <remarks>
+            For complex chart types it may contain several names separated by commas.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.BindingProperty">
+            <summary>
+            Identifies the Binding dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.ItemsSource">
+            <summary>
+            Gets or sets the collection of objects that contains the series data.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.ItemsSourceProperty">
+            <summary>
+            Identifies the ItemsSource dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendToggle">
+            <summary>
+            Gets or sets a value indicating whether clicking legend items toggles
+            the series visibility in the chart.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendToggleProperty">
+            <summary>
+            Identifies the LegendToggle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.Header">
+            <summary>
+            Gets or sets the chart header text.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.HeaderProperty">
+            <summary>
+            Identifies the Header dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.Footer">
+            <summary>
+            Gets or sets the chart footer text.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.FooterProperty">
+            <summary>
+            Identifies the Footer dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.HeaderStyle">
+            <summary>
+            Gets or sets chart header style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.HeaderStyleProperty">
+            <summary>
+            Identifies the HeaderStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.PlotStyle">
+            <summary>
+            Gets or sets chart plot area style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.PlotStyleProperty">
+            <summary>
+            Identifies the PlotStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.HeaderAlignment">
+            <summary>
+            Gets or sets chart header alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.HeaderAlignmentProperty">
+            <summary>
+            Identifies the HeaderAlignment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.FooterStyle">
+            <summary>
+            Gets or sets chart footer style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.FooterStyleProperty">
+            <summary>
+            Identifies the FooterStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.FooterAlignment">
+            <summary>
+            Gets or sets chart footer alignment.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.FooterAlignmentProperty">
+            <summary>
+            Identifies the FooterAlignment dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendPosition">
+            <summary>
+            Gets or sets the chart legend position.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendPositionProperty">
+            <summary>
+            Identifies the LegendPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendStyle">
+            <summary>
+            Gets or sets the legend style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendStyleProperty">
+            <summary>
+            Identifies the LegendStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendItemStyle">
+            <summary>
+            Gets or sets the legend item style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendItemStyleProperty">
+            <summary>
+            Identifies the LegendItemStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendTitle">
+            <summary>
+            Gets or sets the legend title.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendTitleProperty">
+            <summary>
+            Identifies the LegendTitle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendTitleStyle">
+            <summary>
+            Gets or sets the legend title style.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendTitleStyleProperty">
+            <summary>
+            Identifies the LegendTitleStyle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.LegendOrientation">
+            <summary>
+            Gets or sets the legend orientation.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.LegendOrientationProperty">
+            <summary>
+            Identifies the LegendOrientation dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.ToolTipContent">
+            <summary>
+            Gets or sets the chart tooltip content.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.ToolTipContentProperty">
+            <summary>
+            Identifies the ToolTipContent dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.ToolTip">
+            <summary>
+            Gets or sets the chart tooltip.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.ToolTipProperty">
+            <summary>
+            Identifies the ToolTip dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.ChartBase.CustomPalette">
+            <summary>
+            Gets or sets the custom chart palette.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.ChartBase.CustomPaletteProperty">
+            <summary>
+            Identifies the CustomPalette dependency property.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartBase.Rendering">
+            <summary>
+            Fires before chart starts rendering.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartBase.Rendered">
+            <summary>
+            Fires after chart finishes rendering.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartBase.SelectionChanged">
+            <summary>
+            Fires after selected element was changed.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Chart.ChartBase.Tapped">
+            <summary>
+            Occurs for every touch event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.BeginUpdate">
+            <summary>
+            Suspends notifications until the next call to EndUpdate.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.EndUpdate">
+            <summary>
+            Resumes notifications suspended by calls to BeginUpdate.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.PropertyChanged">
+            <summary>
+            Fires when property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.OnSelectionModePropertyChanged(C1.Xamarin.Forms.Chart.ChartSelectionModeType,C1.Xamarin.Forms.Chart.ChartSelectionModeType)">
+            <summary>
+            Fires when SelectionMode property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.TooltipChanged">
+            <summary>
+            Fires when tooltip changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.OnSelectionChanged">
+            <summary>
+            Fires when selection changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.Refresh(System.Boolean)">
+            <summary>
+            ​Refreshes the chart.
+            </summary>
+            <param name="fullUpdate">Whether to update the control layout as well as the content (default: true)</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.DataPropertyChanged(System.Object)">
+            <summary>
+            Fires when data property changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.HitTest(Xamarin.Forms.Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.OnItemsSourceChanged(System.Object)">
+            <summary>
+            Called when ItemsSource changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.ChartBase.OnSelectionChanged(System.EventArgs)">
+            <summary>
+            Called when selection was changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.FlexPie">
+            <summary>
+            The FlexPie control.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.#ctor">
+            <summary>
+            Create an instance of pie.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.BindingName">
+            <summary>
+            Gets or sets the name of the property that contains the name of the data item.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.BindingNameProperty">
+            <summary>
+            Identifies the BindingName dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.Reversed">
+            <summary>
+            Gets or sets a value that determines whether angles are reversed (counter-clockwise).
+            </summary>
+            <remarks>
+            The default value is false, which causes angles to be measured in the clockwise direction.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.ReversedProperty">
+            <summary>
+            Identifies the Reversed dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.Offset">
+            <summary>
+            Gets or sets the offset of the slices from the pie center.
+            </summary>
+            <remarks>
+            The offset is measured as a fraction of the pie radius.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.OffsetProperty">
+            <summary>
+            Identifies the Offset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.InnerRadius">
+            <summary>
+            Gets or sets the size of the pie's inner radius.
+            </summary>
+            <remarks>
+            The inner radius is measured as a fraction of the pie radius.
+            The default value for this property is zero, which creates
+            a pie. Setting this property to values greater than zero
+            creates pies with a hole in the middle, also known as 
+            doughnut charts.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.InnerRadiusProperty">
+            <summary>
+            Identifies the InnerRadius dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.StartAngle">
+            <summary>
+            Gets or sets the starting angle for the pie slices, in degrees.
+            </summary>
+            <remarks>
+            Angles are measured clockwise, starting at the 9 o'clock position.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.StartAngleProperty">
+            <summary>
+            Identifies the StartAngle dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.SliceBorderWidth">
+            <summary>
+            Gets or sets the border width for the pie slices.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.SliceBorderWidthProperty">
+            <summary>
+            Identifies the SliceBorderWidth dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.SelectedItemOffset">
+            <summary>
+            Gets or sets the offset of the selected slice from the pie center.
+            </summary>
+            <remarks>
+            Offsets are measured as a fraction of the pie radius.
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.SelectedItemOffsetProperty">
+            <summary>
+            Identifies the SelectedItemOffset dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.SelectedItemPosition">
+            <summary>
+            Gets or sets the position of the selected slice.
+            </summary>
+            <remarks>
+            Setting this property to a value other than 'None' causes the pie to rotate when an item is selected.               
+            Note that in order to select slices by clicking the chart, you must set the SelectionMode property to "Point".  
+            </remarks>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.FlexPie.SelectedItemPositionProperty">
+            <summary>
+            Identifies the SelectedItemPosition dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.FlexPie.DataLabel">
+            <summary>
+            Gets or sets the data label.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.HitTest(Xamarin.Forms.Point)">
+            <summary>
+            Gets a ChartHitTestInfo object with information about the specified point.
+            </summary>
+            <param name="pt">Point in control coordinates.</param>
+            <returns>A ChartHitTestInfo object with information about the point.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.OnReversedPropertyChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Fires when reversed property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.OnStartAnglePropertyChanged(System.Double,System.Double)">
+            <summary>
+            Fires when start angle property changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.Invalidate">
+            <summary>
+            Invalidates the chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.OnItemsSourceChanged(System.Object)">
+            <summary>
+            Called when ItemsSource changes.
+            </summary>
+            <param name="oldValue"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.FlexPie.Bind">
+            <summary>
+            Bind pie.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.PieSlice">
+            <summary>
+            This class is used in design-time.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.PieSlice.#ctor">
+            <summary>
+            Creates an instance of pie slice.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.PieSlice.#ctor(System.Double,System.String)">
+            <summary>
+            Creates an instance of pie slice with value and name.
+            </summary>
+            <param name="value"></param>
+            <param name="name"></param>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.PieSlice.Name">
+            <summary>
+            Gets or sets the value of Name property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.PieSlice.Value">
+            <summary>
+            Gets or sets the value of Value property.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.PieSliceCollection">
+            <summary>
+            Provides access to an ordered, strongly typed collection of FlexPieSlice objects.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.IChartLayer">
+            <summary>
+            Defines chart layer interface.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.IChartLayer.Chart">
+            <summary>
+            Gets or sets the parent chart.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Interaction.GestureMode">
+            <summary>
+            Specifies available values for gesture direction.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Interaction.GestureMode.None">
+            <summary>
+            Has no effect.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Interaction.GestureMode.X">
+            <summary>
+            Causes behavior along x- axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Interaction.GestureMode.Y">
+            <summary>
+            Causes behavior along y- axis.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Chart.Interaction.GestureMode.XY">
+            <summary>
+            Causes behavior along both x- and y- axes.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Chart.Interaction.IBehavior">
+            <summary>
+            Represents the behaviors that interact with users.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Chart.Interaction.IBehavior.Chart">
+            <summary>
+            Associated chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Interaction.IBehavior.OnAttach">
+            <summary>
+            Called after the behavior is attached to an associated chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Chart.Interaction.IBehavior.OnDetach">
+            <summary>
+            Called after the behavior is detached to an associated chart.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetStroke(System.Object)">
+            <summary>
+            Sets the current stroke brush.
+            </summary>
+            <param name="brush">Native brush or argb color as integer.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetStrokeThickness(System.Double)">
+            <summary>
+            Sets the stroke thickness.
+            </summary>
+            <param name="thickness"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetStrokePattern(System.Double[])">
+            <summary>
+            Sets the stroke pattern.
+            </summary>
+            <param name="pattern"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetFill(System.Object)">
+            <summary>
+            Sets the fill brush.
+            </summary>
+            <param name="brush"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetOpacity(System.Object,System.Double)">
+            <summary>
+            Changes the brush opacity.
+            </summary>
+            <param name="brush">Brush object</param>
+            <param name="opacity">Opacity</param>
+            <returns>Brush object</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetFont(C1.Xamarin.Forms.Core.C1Font)">
+            <summary>
+            Sets the font.
+            </summary>
+            <param name="font">Native font object.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawLine(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draw line between two points using current stroke attributes.
+            </summary>
+            <param name="x1">x-coordinate of first point.</param>
+            <param name="y1">y-coordinate of first point.</param>
+            <param name="x2">x-coordinate of second point.</param>
+            <param name="y2">y-coordinate of second point.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawLines(System.Double[],System.Double[])">
+            <summary>
+            Draw lines using specified coordinates.
+            </summary>
+            <param name="xs">Array of x-coordinates.</param>
+            <param name="ys">Array of y-coordinates.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawRect(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draw rectangle with currect stroke and fill.
+            </summary>
+            <param name="x">x-coordinate of rectangle.</param>
+            <param name="y">y-coordinate of rectangle.</param>
+            <param name="w">Rectangle width.</param>
+            <param name="h">Rectangle height.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawPolygon(System.Double[],System.Double[])">
+            <summary>
+            Draw polygon with currect stroke and fill.
+            </summary>
+            <param name="xs">Array of x-coordinates.</param>
+            <param name="ys">Array of y-coordinates.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawEllipse(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draw ellipse with currect stroke and fill.
+            </summary>
+            <param name="cx">X-coordinate of ellipse center.</param>
+            <param name="cy">Y-coordinate of ellipse center.</param>
+            <param name="rx">x-radius.</param>
+            <param name="ry">y-radius.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawImage(System.Object,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draw image using special source.
+            </summary>
+            <param name="source">the source of image.</param>
+            <param name="x">x-coordinate of image.</param>
+            <param name="y">y-coordinate of image.</param>
+            <param name="w">Image width.</param>
+            <param name="h">Image height.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.MeasureString(System.String)">
+            <summary>
+            Measures size of string.
+            </summary>
+            <param name="s">String to measure.</param>
+            <returns>Size.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawString(System.String,Xamarin.Forms.Point)">
+            <summary>
+            Draw string at specified position.
+            </summary>
+            <param name="s">String to draw.</param>
+            <param name="pos">ChartPositionType.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawStringRotated(System.String,Xamarin.Forms.Point,Xamarin.Forms.Point,System.Double)">
+            <summary>
+            Draw rotated string at specified position.
+            </summary>
+            <param name="s"></param>
+            <param name="pos"></param>
+            <param name="center"></param>
+            <param name="angle"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.SetClipRect(System.Nullable{Xamarin.Forms.Rectangle})">
+            <summary>
+            Sets clip rectangle.
+            </summary>
+            <param name="rect">Clip rectangle. Null clear clipping rectangle.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawPieSegment(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws pie segment at specified point.
+            </summary>
+            <param name="cx">X-coordinate.</param>
+            <param name="cy">Y-coordinate.</param>
+            <param name="radius">Radius.</param>
+            <param name="angle">Angle.</param>
+            <param name="sweep">Sweep angle.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Core.IRenderEngine.DrawDonutSegment(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws donut segment at specified point.
+            </summary>
+            <param name="cx">X-coordinate.</param>
+            <param name="cy">Y-coordinate.</param>
+            <param name="radius">Radius.</param>
+            <param name="innerRadius">Inner radius.</param>
+            <param name="angle">Angle.</param>
+            <param name="sweep">Sweep angle.</param>
+        </member>
+    </members>
+</doc>

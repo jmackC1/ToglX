@@ -1,0 +1,722 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Input</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Input.C1AutoComplete">
+            <summary>
+            The auto-complete control is an editable input control that shows completion suggestions automatically while the user is typing. The list of suggestions is displayed in a drop down menu from which the user.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1AutoComplete.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.C1AutoComplete"/> class.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1AutoComplete.DelayProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1AutoComplete.Delay"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1AutoComplete.MinLengthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1AutoComplete.MinLength"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1AutoComplete.HighlightedColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1AutoComplete.HighlightedColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1AutoComplete.HighlightedColor">
+            <summary>
+            Gets or sets the matched text hightlighted background color.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1AutoComplete.Delay">
+            <summary>
+             Gets or sets the delay, in milliseconds, between when input occurs and when the search is performed.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1AutoComplete.MinLength">
+            <summary>
+             Gets or sets the minimum input length to trigger autocomplete suggestions.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1AutoComplete.FilterString">
+            <summary>
+             Gets or sets the filter string to trigger autocomplete suggestions.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1AutoComplete.Filtering">
+            <summary>
+            Event raised when the control is about to apply a filter to the list of items.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1AutoComplete.OnFiltering(C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs)">
+            <summary>
+            Handle Filtering event.
+            </summary>
+            <param name="e">The filtering event args</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1AutoComplete.GetItemView(System.Object)">
+            <summary>
+            Gets the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.C1ComboBox">
+            <summary>
+            C1ComboBox is an extension of DropDown that contains an editable textbox in the header and a listview in the drop-down.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.C1ComboBox"/> class.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.TextColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.TextColor"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.SelectedBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedBackgroundColor"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.TextAlignmentProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.TextAlignment"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.ItemTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.ItemTemplate"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.ItemsSource"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.DisplayMemberPathProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.DisplayMemberPath"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.AutoCompleteProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.AutoComplete"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.PlaceholderProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.Placeholder"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.TextFontProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.TextFont"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.TextProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.Text"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.IsEditableProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.IsEditable"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.SelectedIndexProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedIndex"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.SelectedItemProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedItem"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValueProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValue"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValuePathProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValuePath"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.ItemsSource">
+            <summary>
+            Gets or sets the source collection that contains the items to select from.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.CollectionView">
+            <summary>
+            Gets the C1CollectionView object used as the items source.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.AutoComplete">
+            <summary>
+            Gets or sets whether the control should try to automatically complete entries using the list of items.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.DisplayMemberPath">
+            <summary>
+            Gets or sets the name of the property to use as the visual representation of the items.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.IsEditable">
+            <summary>
+            Gets or sets the value that enables or disables editing of the text in the control.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedIndex">
+            <summary>
+             Gets or sets the index of the selected item.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedItem">
+            <summary>
+            Gets or sets the current selected item.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValue">
+            <summary>
+            Gets or sets the value of the currently selected item using SelectedValuePath.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedValuePath">
+            <summary>
+            Gets or sets the path that is used to get the value from the selected item.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.Text">
+            <summary>
+            Gets or sets the text of the control.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.Placeholder">
+            <summary>
+            Gets or sets the string shown as a hint when the control is empty.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the selected background color.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.TextColor">
+            <summary>
+            Gets or sets the text color.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.TextFont">
+            <summary>
+            Gets or sets the text font.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.TextAlignment">
+            <summary>
+            Gets or sets the alignment of input text.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1ComboBox.ItemTemplate">
+            <summary>
+            Gets or sets a data template that defines the UI representation for a single item.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1ComboBox.SelectedIndexChanged">
+            <summary>
+            Event raised before the SelectedIndexproperty changes.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1ComboBox.ItemLoading">
+            <summary>
+            Event raised before an item view is created.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.OnSelectedIndexChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:SelectedIndexChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.OnItemLoading(C1.Xamarin.Forms.Input.ComboBoxItemLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:ItemLoading" /> event.
+            </summary>
+            <param name="e">The event args.</param>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1ComboBox.TextChanged">
+            <summary>
+            Event raised before the Textproperty changes.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.OnTextChanged(C1.Xamarin.Forms.Input.TextChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:TextChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.SelectAll">
+            <summary>
+            Sets the focus to the control and selects all of its contents. 
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.OnSelectedValuePropertyChanged(System.Object,System.Object)">
+            <summary>
+            Handle selectedValue property changed event.
+            </summary>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.GetItemView(System.Object)">
+            <summary>
+            Gets the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1ComboBox.CreateItemView(System.Object)">
+            <summary>
+            Create the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.C1DropDown">
+            <summary>
+            C1DropDown provides a generic drop-down control with a Header property that determines what the user sees when the drop-down part of the control is closed, and a Content property that determines what goes into the drop-down section.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.ButtonBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.ButtonBackgroundColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderWidth"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.HeaderBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBackgroundColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBackgroundColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderWidth"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.ButtonColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.ButtonColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.MaxDropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.MaxDropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.MinDropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.MinDropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDown"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.ShowButtonProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.ShowButton"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.HeaderProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.Header"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.IsAnimatedProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.IsAnimated"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownModeProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownMode"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.IsDropDownOpenProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.IsDropDownOpen"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownWidth"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.DropDownBehaviorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBehavior"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1DropDown.AutoCloseProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1DropDown.AutoClose"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1DropDown.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.C1DropDown"/> class.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.ButtonBackgroundColor">
+            <summary>
+            Gets or sets the background of the button. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDown">
+            <summary>
+            Gets or sets the drop-down view. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the background color for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderWidth">
+            <summary>
+            Gets or sets the border thickness for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.ShowButton">
+            <summary>
+            Gets or sets a value that indicates whether the control should display a dropdown button. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.IsEnabled">
+            <summary>
+            Gets or sets whether the control should be enabled. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.HeaderBorderColor">
+            <summary>
+            Gets or sets the border color for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.Header">
+            <summary>
+            Gets or sets the header view. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.IsAnimated">
+            <summary>
+            Gets or sets whether the control is animated. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownMode">
+            <summary>
+            Gets or sets the mode that the DropDown uses to display the DropDownView.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBackgroundColor">
+            <summary>
+            Gets or sets the color of the drop-down. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderColor">
+            <summary>
+            Gets or sets the color of the drop-down border. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBorderWidth">
+            <summary>
+            Gets or sets the width of the drop-down border. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.ButtonColor">
+            <summary>
+            Gets or sets the color of the button content. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.IsDropDownOpen">
+            <summary>
+            Gets or sets a value that indicates whether the dropdown is currently visible. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownHeight">
+            <summary>
+            Gets or sets the height of the drop-down object. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownWidth">
+            <summary>
+            Gets or sets the width of the drop-down object. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.MaxDropDownHeight">
+            <summary>
+            Gets or sets the maximum length constraint of the drop-down box.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.MinDropDownHeight">
+            <summary>
+            Gets or sets the minimum length constraint of the drop-down box.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.DropDownBehavior">
+            <summary>
+            Gets or sets the drop-down behavior. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1DropDown.AutoClose">
+            <summary>
+            Gets or sets auto closes the drop when the user hits outside it. 
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1DropDown.DropDownOpenChanged">
+            <summary>
+            Event raised when the IsDropDownOpen property has changed.
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1DropDown.DropDownOpenChanging">
+            <summary>
+            Event raised before the IsDropDownOpenChanging property changes. 
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1DropDown.OnDropDownOpenChanged(C1.Xamarin.Forms.Input.DropDownOpenChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:DropDownOpenChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1DropDown.OnDropDownOpenChanging(C1.Xamarin.Forms.Input.DropDownOpenChangingEventArgs)">
+            <summary>
+            Raises the <see cref="E:DropDownOpenChanging" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1DropDown.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Layout children.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1DropDown.Dispose">
+            <summary>
+            Releases the resources that used.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.C1MaskedEntry">
+            <summary>
+            Masked editor provides a way to govern what a user is allowed to input. 
+            The control prevents users from accidentally entering invalid data and saves time by skipping over literals (such as slashes in dates) as the user types. 
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1MaskedEntry.MaskProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1MaskedEntry.Mask"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1MaskedEntry.PromptCharProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1MaskedEntry.PromptChar"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.C1MaskedEntry.ValueProperty">
+            <summary>
+            Identifies the <see cref="P:C1.Xamarin.Forms.Input.C1MaskedEntry.Value"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1MaskedEntry.Mask">
+            <summary>
+            Gets or sets the mask used to validate input as the user types. The mask must be a string composed of one or more of the masking elements.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1MaskedEntry.PromptChar">
+            <summary>
+            Gets or sets the symbol used to show input positions in the control. 
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.C1MaskedEntry.Value">
+            <summary>
+            Gets or sets the raw value of the control (excluding prompt and mask literals) 
+            </summary>
+        </member>
+        <member name="E:C1.Xamarin.Forms.Input.C1MaskedEntry.TextChanged">
+            <summary>
+            Event raised when the text property changed. 
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.C1MaskedEntry.OnTextChanged(C1.Xamarin.Forms.Input.TextChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:TextChanged" /> event.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.AutoCompleteOperator">
+            <summary>
+            Specifies how to filter items of autocomplete.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.AutoCompleteOperator.Contains">
+            <summary>
+            Filtering items of autocomplete when contains the input string. 
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.DropDownBehavior">
+            <summary>
+            DropDown interaction behavior.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownBehavior.ButtonTap">
+            <summary>
+            The drop-down appears when the user taps the button.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownBehavior.HeaderTap">
+            <summary>
+            The drop-down appears when the user taps any part of the header.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.DropDownMode">
+            <summary>
+            DropDown display mode.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownMode.FullScreen">
+            <summary>
+            DropDownView is displayed in separate FullScreen page (similar to navigationpage) where user can select from list or navigate backwards by hitting back button
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownMode.AboveOrBelow">
+            <summary>
+            Tries to open the drop-down above the header. If it’s not possible it tries to open below.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownMode.BelowOrAbove">
+            <summary>
+            Tries to open the drop-down below the header. If it’s not possible it tries to open above. (default value).
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownMode.ForceAbove">
+            <summary>
+            Forces the drop-down to open above the header.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.DropDownMode.ForceBelow">
+            <summary>
+            Forces the drop-down to open below the header.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs">
+            <summary>
+            Event information for <see cref="E:C1AutoComplete.Filtering"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs.Cancel">
+            <summary>
+            Gets or sets whether to cancel the default filtering of the autocomplete.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs.FilterString">
+            <summary>
+            Gets or sets the FilterString of the autocomplete.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs.#ctor(System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.AutoCompleteFilteringEventArgs"/> class.
+            </summary>
+            <param name="cancel">cancel or not.</param>
+            <param name="filterString">The filter string.</param> 
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.ComboBoxItemLoadingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1ComboBox.ItemLoading"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.ComboBoxItemLoadingEventArgs.Item">
+            <summary>
+            Gets the items that is being loaded.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.ComboBoxItemLoadingEventArgs.ItemView">
+            <summary>
+            Gets or sets the visual element corresponding to the loading item.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.DropDownOpenChangedEventArgs">
+            <summary>
+            Event information for <see cref="E:C1DropDown.DropDownOpenChanged"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.DropDownOpenChangedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.DropDownOpenChangedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.DropDownOpenChangingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1DropDown.DropDownOpenChanging"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.DropDownOpenChangingEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.DropDownOpenChangingEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.TextChangedEventArgs">
+            <summary>
+            Event information for <see cref="E:C1ComboBox.TextChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.TextChangedEventArgs.OldText">
+            <summary>
+            Gets the old text in the ComboBox.
+            </summary>
+        </member>
+        <member name="P:C1.Xamarin.Forms.Input.TextChangedEventArgs.NewText">
+            <summary>
+            Gets the new text in the ComboBox.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.TextChangedEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.Xamarin.Forms.Input.TextChangedEventArgs"/> class.
+            </summary>
+            <param name="oldText">The old text in the ComboBox.</param>
+            <param name="newText">The new text in the ComboBox.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Grid.Platform.Android</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.Android.FlexGridRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.FlexGrid"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.FlexGridRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.FlexGridRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.FlexGridRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.FlexGridRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.Android.GridColumnHeaderCellRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.GridColumnHeaderCell"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridColumnHeaderCellRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridColumnHeaderCellRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridColumnHeaderCellRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.Android.GridGroupRowCellRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.GridGroupRowCell"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridGroupRowCellRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridGroupRowCellRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.Android.GridGroupRowCellRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+    </members>
+</doc>

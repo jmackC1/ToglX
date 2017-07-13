@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Grid.Platform.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.FlexGrid"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.FlexGridRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.iOS.GridColumnHeaderCellRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.GridColumnHeaderCell"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridColumnHeaderCellRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridColumnHeaderCellRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridColumnHeaderCellRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Grid.Platform.iOS.GridGroupRowCellRenderer">
+            <summary>
+            Renderer for <see cref="T:C1.Xamarin.Forms.Grid.GridGroupRowCell"/>.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridGroupRowCellRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridGroupRowCellRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Grid.Platform.iOS.GridGroupRowCellRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+    </members>
+</doc>

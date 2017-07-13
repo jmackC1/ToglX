@@ -1,0 +1,3180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.UWP.Input</name>
+    </assembly>
+    <members>
+        <member name="T:C1.UWP.Input.C1AutoComplete">
+            <summary>
+            The auto-complete control is an editable input control that shows completion suggestions automatically while the user is typing. The list of suggestions is displayed in a drop down menu from which the user.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1AutoComplete.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.C1AutoComplete"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1AutoComplete.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1AutoComplete"/> control when a new template is applied.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1AutoComplete.DelayProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1AutoComplete.Delay"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1AutoComplete.MinLengthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1AutoComplete.MinLength"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1AutoComplete.HighlightedColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1AutoComplete.HighlightedColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1AutoComplete.HighlightedColor">
+            <summary>
+            Gets or sets the matched text hightlighted background color.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1AutoComplete.Delay">
+            <summary>
+             Gets or sets the delay, in milliseconds, between when input occurs and when the search is performed.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1AutoComplete.MinLength">
+            <summary>
+             Gets or sets the minimum input length to trigger autocomplete suggestions.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1AutoComplete.FilterString">
+            <summary>
+             Gets or sets the filter string to trigger autocomplete suggestions.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1AutoComplete.Filtering">
+            <summary>
+            Event raised when the control is about to apply a filter to the list of items.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1AutoComplete.OnFiltering(C1.UWP.Input.AutoCompleteFilteringEventArgs)">
+            <summary>
+            Handle Filtering event.
+            </summary>
+            <param name="e">The filtering event args</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1AutoComplete.GetItemView(System.Object)">
+            <summary>
+            Gets the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="T:C1.UWP.Input.C1ComboBox">
+            <summary>
+            C1ComboBox is an extension of DropDown that contains an editable textbox in the header and a listview in the drop-down.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.C1ComboBox"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1ComboBox"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.TextColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.TextColor"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.SelectedBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.SelectedBackgroundColor"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.TextAlignmentProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.TextAlignment"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.ItemTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.ItemTemplate"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.ItemsSource"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.DisplayMemberPathProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.DisplayMemberPath"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.AutoCompleteProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.AutoComplete"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.PlaceholderProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.Placeholder"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.TextFontProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.TextFont"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.TextProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.Text"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.IsEditableProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.IsEditable"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.SelectedIndexProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.SelectedIndex"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.SelectedItemProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.SelectedItem"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.SelectedValueProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.SelectedValue"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ComboBox.SelectedValuePathProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ComboBox.SelectedValuePath"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.ItemsSource">
+            <summary>
+            Gets or sets the source collection that contains the items to select from.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.CollectionView">
+            <summary>
+            Gets the C1CollectionView object used as the items source.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.AutoComplete">
+            <summary>
+            Gets or sets whether the control should try to automatically complete entries using the list of items.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.DisplayMemberPath">
+            <summary>
+            Gets or sets the name of the property to use as the visual representation of the items.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.IsEditable">
+            <summary>
+            Gets or sets the value that enables or disables editing of the text in the control.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.SelectedIndex">
+            <summary>
+             Gets or sets the index of the selected item.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.SelectedItem">
+            <summary>
+            Gets or sets the current selected item.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.SelectedValue">
+            <summary>
+            Gets or sets the value of the currently selected item using SelectedValuePath.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.SelectedValuePath">
+            <summary>
+            Gets or sets the path that is used to get the value from the selected item.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.Text">
+            <summary>
+            Gets or sets the text of the control.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.Placeholder">
+            <summary>
+            Gets or sets the string shown as a hint when the control is empty.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the selected background color.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.TextColor">
+            <summary>
+            Gets or sets the text color.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.TextFont">
+            <summary>
+            Gets or sets the text font.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.TextAlignment">
+            <summary>
+            Gets or sets the alignment of input text.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ComboBox.ItemTemplate">
+            <summary>
+            Gets or sets a data template that defines the UI representation for a single item.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1ComboBox.SelectedIndexChanged">
+            <summary>
+            Event raised before the SelectedIndexproperty changes.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1ComboBox.ItemLoading">
+            <summary>
+            Event raised before an item view is created.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.OnSelectedIndexChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:SelectedIndexChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.OnItemLoading(C1.UWP.Input.ComboBoxItemLoadingEventArgs)">
+            <summary>
+            Raises the <see cref="E:ItemLoading" /> event.
+            </summary>
+            <param name="e">The event args.</param>
+        </member>
+        <member name="E:C1.UWP.Input.C1ComboBox.TextChanged">
+            <summary>
+            Event raised before the Textproperty changes.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.OnTextChanged(C1.UWP.Input.TextChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:TextChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.SelectAll">
+            <summary>
+            Sets the focus to the control and selects all of its contents. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.OnSelectedValuePropertyChanged(System.Object,System.Object)">
+            <summary>
+            Handle selectedValue property changed event.
+            </summary>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.GetItemView(System.Object)">
+            <summary>
+            Gets the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="M:C1.UWP.Input.C1ComboBox.CreateItemView(System.Object)">
+            <summary>
+            Create the visual representation of an item.
+            </summary>
+            <param name="item">The data item.</param>
+            <returns>Visual representation of an item.</returns>
+        </member>
+        <member name="T:C1.UWP.Input.C1DropDown">
+            <summary>
+            C1DropDown provides a generic drop-down control with a Header property that determines what the user sees when the drop-down part of the control is closed, and a Content property that determines what goes into the drop-down section.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.RootPanel">
+            <summary>
+            Get the root panel.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.ButtonBackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.ButtonBackground"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.HeaderBorderWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.HeaderBorderWidth"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.FocusCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.FocusCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DisabledCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DisabledCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.HeaderBackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.HeaderBackground"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownBackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownBackground"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownBorderColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.HeaderBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.HeaderBorderColor"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownBorderWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownBorderWidth"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.ButtonForegroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.ButtonForeground"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.IsMouseOverProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.IsMouseOver"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.IsFocusedProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.IsFocused"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.MouseOverBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.MouseOverBrush"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.PressedBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.PressedBrush"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.FocusBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.FocusBrush"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.CornerRadius"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.MaxDropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.MaxDropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.MinDropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.MinDropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDown"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.ShowButtonProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.ShowButton"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.HeaderProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.Header"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.IsAnimatedProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.IsAnimated"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownModeProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownMode"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.IsDropDownOpenProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.IsDropDownOpen"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownHeightProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownWidthProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownWidth"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.DropDownBehaviorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.DropDownBehavior"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1DropDown.AutoCloseProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1DropDown.AutoClose"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.C1DropDown"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1DropDown"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.ButtonBackground">
+            <summary>
+            Gets or sets the background of the button. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDown">
+            <summary>
+            Gets or sets the drop-down view. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.HeaderBackground">
+            <summary>
+            Gets or sets the background color for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.HeaderBorderWidth">
+            <summary>
+            Gets or sets the border thickness for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.ShowButton">
+            <summary>
+            Gets or sets a value that indicates whether the control should display a dropdown button. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.IsEnabled">
+            <summary>
+            Gets or sets whether the control should be enabled. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.HeaderBorderColor">
+            <summary>
+            Gets or sets the border color for the header. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.Header">
+            <summary>
+            Gets or sets the header view. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.IsAnimated">
+            <summary>
+            Gets or sets whether the control is animated. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownMode">
+            <summary>
+            Gets or sets the mode that the DropDown uses to display the DropDownView.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownBackground">
+            <summary>
+            Gets or sets the color of the drop-down. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownBorderColor">
+            <summary>
+            Gets or sets the color of the drop-down border. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownBorderWidth">
+            <summary>
+            Gets or sets the width of the drop-down border. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.ButtonForeground">
+            <summary>
+            Gets or sets the color of the button content. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.IsDropDownOpen">
+            <summary>
+            Gets or sets a value that indicates whether the dropdown is currently visible. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownHeight">
+            <summary>
+            Gets or sets the height of the drop-down object. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownWidth">
+            <summary>
+            Gets or sets the width of the drop-down object. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.MaxDropDownHeight">
+            <summary>
+            Gets or sets the maximum length constraint of the drop-down box.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.MinDropDownHeight">
+            <summary>
+            Gets or sets the minimum length constraint of the drop-down box.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DropDownBehavior">
+            <summary>
+            Gets or sets the drop-down behavior. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.AutoClose">
+            <summary>
+            Gets or sets auto closes the drop when the user hits outside it. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.FocusCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the focus visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.DisabledCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the disabled visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.IsMouseOver">
+            <summary>
+            Returns true if the mouse is over the control.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.IsFocused">
+            <summary>
+            Returns true if the control has the focus.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.MouseOverBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used to highlight the control when it has the mouse over.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.PressedBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used to paint a button when it is pressed.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.FocusBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used to highlight the focused control.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1DropDown.CornerRadius">
+            <summary>
+            Gets or sets a value that represents the degree to which the corners of the element are rounded.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1DropDown.DropDownOpenChanged">
+            <summary>
+            Event raised when the IsDropDownOpen property has changed.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1DropDown.DropDownOpenChanging">
+            <summary>
+            Event raised before the IsDropDownOpenChanging property changes. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.OnDropDownOpenChanged(C1.UWP.Input.DropDownOpenChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:DropDownOpenChanged" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.OnDropDownOpenChanging(C1.UWP.Input.DropDownOpenChangingEventArgs)">
+            <summary>
+            Raises the <see cref="E:DropDownOpenChanging" /> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.ChangeVisualStateDropDownOpen(System.Boolean)">
+            <summary>
+            Updates the current visual state of the DropDownOpen visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.ChangeVisualStateCommon(System.Boolean)">
+            <summary>
+            Updates the current visual state of the Common visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.ChangeVisualStateFocus(System.Boolean)">
+            <summary>
+            Updates the current visual state of the Focus visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1DropDown.GetPreferedLocations">
+            <summary>
+            Get the locations where the dropdown will try to locate the <see cref="T:Windows.UI.Xaml.Controls.Primitives.Popup"/> once it's opened.
+            </summary>
+            <returns>Ordered list of <see cref="T:C1.UWP.Core.AnchorMatching"/> to try.</returns>
+        </member>
+        <member name="T:C1.UWP.Input.C1MaskedTextBox">
+            <summary>
+            Masked editor provides a way to govern what a user is allowed to input. 
+            The control prevents users from accidentally entering invalid data and saves time by skipping over literals (such as slashes in dates) as the user types. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1MaskedTextBox.MaskProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1MaskedTextBox.Mask"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1MaskedTextBox.PromptCharProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1MaskedTextBox.PromptChar"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1MaskedTextBox.ValueProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1MaskedTextBox.Value"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1MaskedTextBox.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:C1.UWP.Input.C1MaskedTextBox"/>.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.Mask">
+            <summary>
+            Gets or sets the mask used to validate input as the user types. The mask must be a string composed of one or more of the masking elements.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.PromptChar">
+            <summary>
+            Gets or sets the symbol used to show input positions in the control. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.Value">
+            <summary>
+            Gets or sets the raw value of the control (excluding prompt and mask literals) 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.IsWatermarked">
+            <summary>
+             Gets whether the control is watermarked.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.IsValid">
+            <summary>
+            Gets a value that determines whether the control contains a valid entry.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.Culture">
+            <summary>
+            Sets the culture used to display the value in the <see cref="T:C1.WPF.C1MaskedTextBox" />.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1MaskedTextBox.CultureProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1MaskedTextBox.Culture"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.TextMaskFormat">
+            <summary>
+            Gets or sets a value that determines whether literals and prompt characters are included in the <see cref="P:C1.UWP.Input.C1MaskedTextBox.Value" /> property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1MaskedTextBox.ReplaceMode">
+            <remarks>
+            Set this property value to true if typing characters should be inserted at an insertion point position; otherwise, set it to false if typing characters should overwrite existing characters at an insertion point position.
+            </remarks>
+        </member>
+        <member name="E:C1.UWP.Input.C1MaskedTextBox.MaskedTextChanged">
+            <summary>
+            Event raised when the text property changed. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1MaskedTextBox.OnTextChanged(C1.UWP.Input.TextChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:TextChanged" /> event.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.MaskFormat">
+            <summary>
+            Defines how to format the value inside of a <see cref="T:C1.UWP.Input.C1MaskedTextBox"/>.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.MaskFormat.IncludePrompt">
+            <summary>
+            Return text input by the user as well as any instances of the prompt character.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.MaskFormat.IncludeLiterals">
+            <summary>
+            Return text input by the user as well as any literal characters defined in the mask.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.MaskFormat.IncludePromptAndLiterals">
+            <summary>
+            Return text input by the user as well as any literal characters defined in the mask and any instances of the prompt character.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.MaskFormat.ExcludePromptAndLiterals">
+            <summary>
+            Return only text input by the user.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.ComboBoxDropDownView.TextColor">
+            <summary>
+            Gets or sets the text color.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.AutoCompleteOperator">
+            <summary>
+            Specifies how to filter items of autocomplete.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.AutoCompleteOperator.Contains">
+            <summary>
+            Filtering items of autocomplete when contains the input string. 
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.DropDownBehavior">
+            <summary>
+            DropDown interaction behavior.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownBehavior.ButtonTap">
+            <summary>
+            The drop-down appears when the user taps the button.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownBehavior.HeaderTap">
+            <summary>
+            The drop-down appears when the user taps any part of the header.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.DropDownMode">
+            <summary>
+            DropDown display mode.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownMode.FullScreen">
+            <summary>
+            DropDownView is displayed in separate FullScreen page (similar to navigationpage) where user can select from list or navigate backwards by hitting back button
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownMode.AboveOrBelow">
+            <summary>
+            Tries to open the drop-down above the header. If it’s not possible it tries to open below.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownMode.BelowOrAbove">
+            <summary>
+            Tries to open the drop-down below the header. If it’s not possible it tries to open above. (default value).
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownMode.ForceAbove">
+            <summary>
+            Forces the drop-down to open above the header.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.DropDownMode.ForceBelow">
+            <summary>
+            Forces the drop-down to open below the header.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.AutoCompleteFilteringEventArgs">
+            <summary>
+            Event information for <see cref="E:C1AutoComplete.Filtering"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.AutoCompleteFilteringEventArgs.Cancel">
+            <summary>
+            Gets or sets whether to cancel the default filtering of the autocomplete.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.AutoCompleteFilteringEventArgs.FilterString">
+            <summary>
+            Gets or sets the FilterString of the autocomplete.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.AutoCompleteFilteringEventArgs.#ctor(System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.AutoCompleteFilteringEventArgs"/> class.
+            </summary>
+            <param name="cancel">cancel or not.</param>
+            <param name="filterString">The filter string.</param> 
+        </member>
+        <member name="T:C1.UWP.Input.ComboBoxItemLoadingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1ComboBox.ItemLoading"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.ComboBoxItemLoadingEventArgs.Item">
+            <summary>
+            Gets the items that is being loaded.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.ComboBoxItemLoadingEventArgs.ItemView">
+            <summary>
+            Gets or sets the visual element corresponding to the loading item.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.DropDownOpenChangedEventArgs">
+            <summary>
+            Event information for <see cref="E:C1DropDown.DropDownOpenChanged"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.DropDownOpenChangedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.DropDownOpenChangedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.DropDownOpenChangingEventArgs">
+            <summary>
+            Event information for <see cref="E:C1DropDown.DropDownOpenChanging"/> event.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.DropDownOpenChangingEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.DropDownOpenChangingEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.TextChangedEventArgs">
+            <summary>
+            Event information for <see cref="E:C1ComboBox.TextChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextChangedEventArgs.OldText">
+            <summary>
+            Gets the old text in the ComboBox.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextChangedEventArgs.NewText">
+            <summary>
+            Gets the new text in the ComboBox.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.TextChangedEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:C1.UWP.Input.TextChangedEventArgs"/> class.
+            </summary>
+            <param name="oldText">The old text in the ComboBox.</param>
+            <param name="newText">The new text in the ComboBox.</param>
+        </member>
+        <member name="T:C1.UWP.Input.ValidationState">
+            <summary>
+            Enumerates binding validation states.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.ValidationState.Valid">
+            <summary>
+            All bindings are valid.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.ValidationState.InvalidFocused">
+            <summary>
+            A binding is invalid and the control is focused.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.ValidationState.InvalidUnfocused">
+            <summary>
+            A binding is invalid and the control is unfocused.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.C1ValidationDecorator">
+            <summary>
+            The decorator class of Validation.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ValidationDecorator.ChangeVisualStateValidationStates(System.Boolean)">
+            <summary>
+            Updates the current visual state of the ValidationStates visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ValidationDecorator.ValidationState">
+            <summary>
+            Gets or sets the <see cref="P:C1.UWP.Input.C1ValidationDecorator.ValidationState"/>.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ValidationDecorator.ValidationStateProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ValidationDecorator.ValidationState"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ValidationDecorator.Target">
+            <summary>
+            Gets or sets the target of the validation.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ValidationDecorator.TargetProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ValidationDecorator.Target"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1ValidationDecorator.CornerRadius">
+            <summary>
+            Gets or sets a value that represents the degree to which the corners of the element are rounded.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1ValidationDecorator.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1ValidationDecorator.CornerRadius"/> dependency property. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ValidationDecorator.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:C1.UWP.Input.C1ValidationDecorator"/>.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1ValidationDecorator.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1ValidationDecorator"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="T:C1.UWP.Input.CompositeTextUtils">
+            <summary>
+            Provides utilities for processing a text where each glyph can be represented by multiple
+            unicode chars. Such a text in the utility methods is represented by an array of strings,
+            where each string represents a single glyph.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.TextEditedEventArgs">
+            <summary>
+            AutoComplete event details.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.LastKey">
+            <summary>
+            Gets or sets the last key.
+            </summary>
+            <value>The last key.</value>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.CurrentText">
+            <summary>
+            Current text.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.CurrentSelectionStart">
+            <summary>
+            Current selection start.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.NewText">
+            <summary>
+            Text that will be put in the control after the AutoComplete.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.NewSelectionStart">
+            <summary>
+            Index where the selection will start after the AutoComplete.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.TextEditedEventArgs.Cancel">
+            <summary>
+            Cancel the input of the new text.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.TranslateContextDependentLiteral(System.String)">
+            <summary>
+            If passed literal is not context dependent then returns the passed value.
+            </summary>
+            <param name="symbol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.IsBinary(System.Char)">
+            <summary>
+              Checks whether the special character is a binary character.
+            </summary>
+            <param name="c">
+              A <b>char</b> indicates the character to be checked.
+            </param>
+            <returns>
+              If the character is a binary character, return <b>true</b>, otherwise, return <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.IsHex(System.Char)">
+            <summary>
+              Checks whether the special character is a hex character.
+            </summary>
+            <param name="c">
+              A <b>char</b> indicates the character to be checked.
+            </param>
+            <returns>
+              If the character is a hex character, return <b>true</b>, otherwise, return <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.IsSymbol(System.Char)">
+            <summary>
+              Checks whether the special character is a symbol character.
+            </summary>
+            <param name="c">
+              A <b>char</b> indicates the character to be checked.
+            </param>
+            <returns>
+              If the character is a symbol character, return <b>true</b>, otherwise, return <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.IsNumberSymbol(System.Char)">
+            <summary>
+              Checks whether the special character is a number symbol character.
+            </summary>
+            <param name="c">
+              A <b>char</b> indicates the character to be checked.
+            </param>
+            <returns>
+              If the character is a number symbol character, return <b>true</b>, otherwise, return <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.FindNextPrompt(System.Int32,System.Boolean)">
+            <summary>
+            offset = -1 means "before first"
+            offset = Tokens.Count means "after last"
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.TokenizedMask.GetApplicableSymbolList(System.Collections.Generic.IList{System.String},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets a list of symbols where non applicable symbols are excessive trailing symbols are excluded.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.MaskToken.IsLiteral">
+            <summary>
+            Indicates whether the token represents a literal or a prompt symbol.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.MaskToken.OutputSymbol">
+            <summary>
+            Gets a symbol that as it's shown in the TextBox.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.MaskToken.OriginalSymbol">
+            <summary>
+            Gets an original mask symbol, as defined in the TextBox.Mask property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.PromptToken.IsUppercase">
+            <summary>
+            true - force upper case
+            false - force lower case
+            null - show as is
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.PromptToken.Value">
+            <summary>
+            Gets or sets a user input for this prompt.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.PromptToken.IsEmpty">
+            <summary>
+            Indicates whether an input is entered in the token.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.PromptToken.ClearValue">
+            <summary>
+            Set the Value property to a default value.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.C1EditableContentControl">
+            <summary>
+            ContenControl that supports edit mode.
+            </summary>	
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.ChangeVisualStateCommon(System.Boolean)">
+            <summary>
+            Updates the current visual state of the Common visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.IsEditable">
+            <summary>
+            Gets/set if the control can be edited.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.IsEditableProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.IsEditable"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.IsInEditMode">
+            <summary>
+            Gets/sets when the control enters in edit mode.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.IsInEditModeProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.IsInEditMode"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.EditControl">
+            <summary>
+            Control visible when it is in edit mode.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.EditControlProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.EditControl"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.ContentControl">
+            <summary>
+            Control visible when it is not in edit mode.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.ContentControlProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.ContentControl"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.IsMouseOver">
+            <summary>
+            Returns true if the mouse is over the control.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.IsMouseOverProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.IsMouseOver"/> dependency property. 
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1EditableContentControl.IsMouseOverChanged">
+            <summary> 
+            Event raised when the <see cref="P:IsMouseOver"/> property has changed.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.ForceMouseOver">
+            <summary>
+            Set to true to force the mouse over visual state.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.ForceMouseOverProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.ForceMouseOver"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.ValidationDecoratorStyle">
+            <summary>
+            Gets or sets the style that is applied to the inner <see cref="T:C1.UWP.Input.C1ValidationDecorator" />.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1EditableContentControl.ValidationDecoratorStyleProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1EditableContentControl.ValidationDecoratorStyle"/> dependency property. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:C1.UWP.Input.C1EditableContentControl"/>.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1EditableContentControl"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.ActualContent">
+            <summary>
+            Allows to set the content without generating a parent child relationship clash when the content already has a parent.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            Called when the value of the <see cref="P:Content"/> property changes.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnIsEditableChanged(System.Boolean)">
+            <summary>
+            The IsEditable value has changed.
+            </summary>
+            <param name="oldValue">Old IsEditable value</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnIsInEditModeChanged(System.Boolean)">
+            <summary>
+            The control has changed the mode.
+            </summary>
+            <param name="oldValue">Old IsInEditMode value</param>
+        </member>
+        <member name="E:C1.UWP.Input.C1EditableContentControl.EditCompleted">
+            <summary>
+            Fired when the user has completed the edits.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnEditCompleted">
+            <summary>
+            Fires the <see cref="E:C1.Silverlight.C1EditableContentControl.EditCompleted" /> event.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1EditableContentControl.EditCanceled">
+            <summary>
+            Fired when the user exits edit mode without changes.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnEditCanceled">
+            <summary>
+            Fires the <see cref="E:C1.Silverlight.C1EditableContentControl.EditCanceled" /> event.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1EditableContentControl.EditStarted">
+            <summary>
+            Fired when the control enters edit mode.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnEditStarted">
+            <summary>
+            Fires the <see cref="E:C1.Silverlight.C1EditableContentControl.EditStarted" /> event.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1EditableContentControl.IsDirty">
+            <summary>
+            Get or sets whether the element was edited during edit mode.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Handle press action within this element.
+            </summary>
+            <param name="e">Event args.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.ShouldEnterEditModeOnKeyDown(Windows.System.VirtualKey)">
+            <summary>
+            Called to define if the control has to enter edit mode when a particular key is pressed.
+            For example: arrow keys might not change to edit mode.
+            </summary>
+            <param name="key">Key that was pressed.</param>
+            <returns>True if the control has enter edit mode.</returns>
+        </member>
+        <member name="M:C1.UWP.Input.C1EditableContentControl.UpdateVisualState">
+            <summary>
+            Update the visual state of this control
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.C1TextBoxBase">
+            <summary> 
+            Base class for all ComponentOne text box controls.
+            </summary>
+            <remarks>
+            Adds <see cref="P:C1.Silverlight.C1TextBoxBase.Watermark" /> and <see cref="P:C1.Silverlight.C1TextBoxBase.IsEnabled" /> properties, 
+            as well as styles for mouse over and focus.
+            </remarks>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.WatermarkProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.Watermark"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.WatermarkColorProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.WatermarkColor"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.IsFocusedProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.IsFocused"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.SelectOnFocusProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.SelectOnFocus"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.DisabledCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.DisabledCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.FocusCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.FocusCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.MouseOverBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.MouseOverBrush"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.FocusBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.FocusBrush"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.CornerRadius"/> dependency property. 
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.ValidationDecoratorStyleProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextBoxBase.ValidationDecoratorStyle"/> dependency property. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:C1.UWP.Input.C1TextBoxBase"/>.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1TextBoxBase"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.Watermark">
+            <summary>
+            Gets or sets the content of the watermark.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.WatermarkColor">
+            <summary>
+            Gets or sets the color of the watermark.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.IsFocused">
+            <summary>
+            Returns true if the control has the focus.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.SelectOnFocus">
+            <remarks>
+            The default value is OnDefaultSelection.
+            </remarks>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.FocusCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the focus visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.DisabledCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the disabled visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextBoxBase.KeyDown">
+            <summary>
+            Occurs when a keyboard key is pressed while the <see cref="T:System.Windows.UIElement"/> has focus.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextBoxBase.C1TextProperty">
+            <summary>
+            Identifies the C1Text dependency property.
+            </summary>
+            <remarks>
+            This property is used as a workaround when a binding needs to be updated on each keystroke.
+            </remarks>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.C1Text">
+            <summary>
+            Get or set the C1Text property.
+            This property is used as a workaround when a binding needs to be updated on each keystroke.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextBoxBase.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises the property changed event.
+            </summary>
+            <param name="propertyName">Name of the property that changed.</param>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.IsWatermarked">
+            <summary>
+            Gets a value indicating whether this textbox is watermarked.
+            </summary>
+            <value>
+            	<c>true</c> if this textbox is watermarked; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.OnIsFocusedChanged(System.Boolean)">
+            <summary>
+            Callback called when the <see cref="P:IsFocused"/> property changes.
+            </summary>
+            <param name="oldValue">The previous value of IsFocused.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.ChangeVisualStateFocus(System.Boolean)">
+            <summary>
+            Change the status of focus.
+            </summary>
+            <param name="useTransitions">Use transitions or not.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.ChangeVisualStateWatermark(System.Boolean)">
+            <summary>
+            Change the status of watermark.
+            </summary>
+            <param name="useTransitions">Use transitions or not.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.OnTextChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called immediately after the Text property changes.
+            </summary>
+            <param name="e">Provides data about the change.</param>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.UpdateIsWatermarked">
+            <summary>
+            Derived classes can call this method when the <see cref="P:IsWatermarked"/> state is changed from their point of view.
+            This method forces the IsWatermarked state to be updated without clearing the Text property.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextBoxBase.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <summary>
+            Called when <see cref="E:System.Windows.UIElement.KeyDown"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.MouseOverBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used to highlight the control when it has the mouse over.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.FocusBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used to highlight the focused control.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.CornerRadius">
+            <summary>
+            Gets or sets a value that represents the degree to which the corners of the element are rounded.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextBoxBase.ValidationDecoratorStyle">
+            <summary>
+            Gets or sets the style that is applied to the inner <see cref="T:C1.UWP.Input.C1ValidationDecorator" />.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.SelectOnFocusCondition">
+            <summary>
+            Defines the possible conditions that cause selection of an entire control text when control receives focus.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.SelectOnFocusCondition.Never">
+            <summary>
+            Never select a text.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.SelectOnFocusCondition.Always">
+            <summary>
+            Always select a text.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.SelectOnFocusCondition.OnDefaultSelection">
+            <summary>
+            Select text only if the both SelectionStart and SelectionLength properties are set to zero.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.C1TextEditableContentControl">
+            <summary>
+            Dual control that provides a <see cref="T:Windows.UI.Xaml.Controls.TextBox" /> on edit mode, and a <see cref="T:Windows.UI.Xaml.Controls.ContentControl" /> on readonly mode.
+            </summary>	
+        </member>
+        <member name="M:C1.UWP.Input.C1TextEditableContentControl.ChangeVisualStateWatermark(System.Boolean)">
+            <summary>
+            Updates the current visual state of the Watermark visual state group to match the object's properties.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.TextAlignment">
+            <summary>
+            Gets or sets how the text should be aligned in the <see cref="T:C1.UWP.Input.C1TextEditableContentControl" />.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.TextAlignmentProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.TextAlignment"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.Watermark">
+            <summary>
+            Gets or sets the watermark content displayed when the control is empty.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.WatermarkProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.Watermark"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.IsWatermarked">
+            <summary>
+            Get or sets if the watermark is shown.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.IsWatermarkedProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.IsWatermarked"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.FocusCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the focus visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.FocusCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.FocusCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.DisabledCuesVisibility">
+            <summary>
+            Gets or sets a value indicating whether the disabled visuals of the control are visible.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.DisabledCuesVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.DisabledCuesVisibility"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.ValidationDecoratorStyle">
+            <summary>
+            Gets or sets the style that is applied to the inner <see cref="T:C1.UWP.Input.C1ValidationDecorator" />.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.ValidationDecoratorStyleProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.ValidationDecoratorStyle"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.SelectionBackground">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> that fills the background of the selected text.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.SelectionBackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.SelectionBackground"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.SelectionForeground">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> used as foreground of the selected text.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.SelectionForegroundProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.SelectionForeground"/> dependency property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.CaretBrush">
+            <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Media.Brush" /> of the blinking cursor of an input control.  When .NET Framework is v3.5, 'CaretBrush' takes no effect.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Input.C1TextEditableContentControl.CaretBrushProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Input.C1TextEditableContentControl.CaretBrush"/> dependency property. 
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextEditableContentControl.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:C1.UWP.Input.C1TextEditableContentControl"/>.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1TextEditableContentControl.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the <see cref="T:C1.UWP.Input.C1TextEditableContentControl"/> control when a new template is applied.
+            </summary>
+            <remarks>
+            This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <see cref="M:ApplyTemplate"/> method.
+            </remarks>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextEditableContentControl.ValidateInput">
+            <summary>
+            Event fired when the editing is completed.
+            Handle this event to validate the new input.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextEditableContentControl.TextBoxKeyDown">
+            <summary>
+            Event fired when a key is pressed in the EditableTextBox.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextEditableContentControl.TextBoxKeyUp">
+            <summary>
+            Event fired when a key is released in the EditableTextBox.
+            </summary>
+        </member>
+        <member name="E:C1.UWP.Input.C1TextEditableContentControl.TextEdited">
+            <summary>
+            Event fired to do when the text is edited in the EditableTextBox.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.C1TextEditableContentControl.EditTextBox">
+            <summary>
+            <see cref="T:C1.Silverlight.C1TextBoxBase" /> used during the edit mode.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.Input.ValidateInputEventArgs">
+            <summary>
+            Arguments for the event fired to validate the input.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.ValidateInputEventArgs.Input">
+            <summary>
+            New text input
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Input.ValidateInputEventArgs.IsValidInput">
+            <summary>
+            Set this flag to undo the edits if the input is not valid.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1_UWP_Input_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1_UWP_Input_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Input.C1_UWP_Input_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:C1.UWP.IConvertedCharSetEnumerator">
+            <summary>
+              Defines a enumerator for browsing the <see cref="T:C1.UWP.ConvertedCharSet"/>.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.IConvertedCharSetEnumerator.Reset">
+            <summary>
+              Resets the character set enumerator to start the browsing.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.IConvertedCharSetEnumerator.Current">
+            <summary>
+              Gets the current browsed item in the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="M:C1.UWP.IConvertedCharSetEnumerator.MoveNext">
+            <summary>
+              Move to next item in the character set.
+            </summary>
+            <returns>
+              <b>true</b>, there have a item to be browsed.
+              <b>false</b>, the browsing has finished.
+            </returns>
+        </member>
+        <member name="T:C1.UWP.ConvertedCharSet">
+            <summary>
+              Defines a character set, all the characters in it may be converted each other.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.ConvertedCharSet.Seed">
+            <summary>
+              Gets a start point for browsing the character set. It also is the start point of the converting.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a item in the character set.
+            </value>
+        </member>
+        <member name="P:C1.UWP.ConvertedCharSet.Key">
+            <summary>
+              Gets the key item in the character set.
+            </summary>
+            <value>
+              A <b>char</b> indicates a key item that can be used to identify a character set.
+            </value>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.GetEnumerator">
+            <summary>
+              Gets the enumerator for the <see cref="T:C1.UWP.ConvertedCharSet"/>.
+            </summary>
+            <returns>
+              Returns the enumerator for the <see cref="T:C1.UWP.ConvertedCharSet"/>.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.Equals(System.Object)">
+            <summary>
+              Overridden, Determines whether the specified Object is equal to the current Object. 
+            </summary>
+            <param name="obj">
+              The Object to compare with the current Object.
+            </param>
+            <returns>
+              true if the specified Object is equal to the current Object; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.GetHashCode">
+            <summary>
+              Serves as a hash function for a particular type, suitable for use in hashing algorithms 
+              and data structures like a hash table.
+            </summary>
+            <returns>
+              A hash code for the current Object.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.op_Equality(C1.UWP.ConvertedCharSet,C1.UWP.ConvertedCharSet)">
+            <summary>
+              Defines the "==" operator, for <see cref="T:C1.UWP.ConvertedCharSet"/> class.
+            </summary>
+            <param name="left">
+              A <see cref="T:C1.UWP.ConvertedCharSet"/> indicates the left operand.
+            </param>
+            <param name="right">
+              A <see cref="T:C1.UWP.ConvertedCharSet"/> indicates the right operand.
+            </param>
+            <returns>
+              If two operands are equal,return true, otherwise, return false.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.op_Inequality(C1.UWP.ConvertedCharSet,C1.UWP.ConvertedCharSet)">
+            <summary>
+              Defines the "!=" operator, for <see cref="T:C1.UWP.ConvertedCharSet"/> class.
+            </summary>
+            <param name="left">
+              A <see cref="T:C1.UWP.ConvertedCharSet"/> indicates the left operand.
+            </param>
+            <param name="right">
+              A <see cref="T:C1.UWP.ConvertedCharSet"/> indicates the right operand.
+            </param>
+            <returns>
+              If two operands are equal,return false, otherwise, return true.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.CreateConvertedCharSet(System.Char)">
+            <summary>
+              Creates a <see cref="T:C1.UWP.ConvertedCharSet"/> for special character.
+            </summary>
+            <param name="character">
+              A <b>char</b> indicates the special character.
+            </param>
+            <returns>
+              Return a <see cref="T:C1.UWP.ConvertedCharSet"/> that contains the converted characters of special character.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.CreateConvertedCharSet(System.Char,System.Char)">
+            <summary>
+              Creates a <see cref="T:C1.UWP.ConvertedCharSet"/> for special character.
+            </summary>
+            <param name="character">
+              A <b>char</b> indicates the special character.
+            </param>
+            <param name="followedCharacter">
+              A <b>char</b> indicates a character that follows the special character.
+            </param>
+            <returns>
+              Return a <see cref="T:C1.UWP.ConvertedCharSet"/> that contains the converted characters of special character.
+            </returns>
+        </member>
+        <member name="M:C1.UWP.ConvertedCharSet.CreateConvertedCharSet(System.String,System.Int32)">
+            <summary>
+              Creates a <see cref="T:C1.UWP.ConvertedCharSet"/> for special character.
+            </summary>
+            <param name="str">
+              A <b>string</b> indicates the string.
+            </param>
+            <param name="index">
+              A <b>int</b> indicates a special character in the string.
+            </param>
+            <returns>
+              Return a <see cref="T:C1.UWP.ConvertedCharSet"/> that contains the converted characters of special character
+              in the string.
+            </returns>
+        </member>
+        <member name="T:C1.UWP.AlphabetConvertedCharSet">
+            <summary>
+              Defines the converted character set for alphabet.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator">
+            <summary>
+              Defines the enumerator for AlphabetConvertedCharSet.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator.Steps">
+            <summary>
+              A enumeration indicates the converted states.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator._owner">
+            <summary>
+              Indicates the owner of the enumerator.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator._step">
+            <summary>
+              A <b>char</b> array indicates current state.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator.#ctor(C1.UWP.AlphabetConvertedCharSet)">
+            <summary>
+              Initializes a new instance of the <see cref="T:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator"/>.
+            </summary>
+            <param name="owner">
+              Indicates the owner of the enumerator.
+            </param>
+        </member>
+        <member name="P:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator.Current">
+            <summary>
+              Gets the current browsed item in the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="M:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator.Reset">
+            <summary>
+              Resets the character set enumerator to start the browsing.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.AlphabetConvertedCharSet.AlphabetConvertedCharSetEnumerator.MoveNext">
+            <summary>
+              Move to next item in the character set.
+            </summary>
+            <returns>
+              <b>true</b>, there have a item to be browsed.
+              <b>false</b>, the browsing has finished.
+            </returns>
+        </member>
+        <member name="F:C1.UWP.AlphabetConvertedCharSet._seed">
+            <summary>
+              A <b>char</b> indicates browsing seed.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.AlphabetConvertedCharSet.#ctor(System.Char)">
+            <summary>
+              Initializes a new instance of the AlphabetConvertedCharSet class.
+            </summary>
+            <param name="alphabetCharacter">
+              A <b>char</b> indicates a alphabet character.
+            </param>
+        </member>
+        <member name="P:C1.UWP.AlphabetConvertedCharSet.Seed">
+            <summary>
+              Gets a start point for browsing the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="P:C1.UWP.AlphabetConvertedCharSet.Key">
+            <summary>
+              Gets the key item in the set.
+            </summary>
+            <value>
+              A <b>char</b> indicates a key item that can be used to identify a character set.
+            </value>
+        </member>
+        <member name="M:C1.UWP.AlphabetConvertedCharSet.GetEnumerator">
+            <summary>
+              Gets the enumerator for the <see cref="T:C1.UWP.AlphabetConvertedCharSet"/>.
+            </summary>
+            <returns>
+              Returns the enumerator for the <see cref="T:C1.UWP.AlphabetConvertedCharSet"/>.
+            </returns>
+        </member>
+        <member name="T:C1.UWP.KanaConvertedCharSet">
+            <summary>
+              Defines the converted character set for the kana characters.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator">
+            <summary>
+              Defines the enumerator for the KanaConvertedCharSet.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator._items">
+            <summary>
+              Indicates the characters.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator._currentIndex">
+            <summary>
+              A <see cref="T:System.Int32"/> indicates the current step index in the character array.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.AddHiraganaItems(System.Char,System.Collections.Generic.List{System.Char[]})">
+            <summary>
+              Add the items for Hiragana.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.AddFullKatakana(System.Char,System.Collections.Generic.List{System.Char[]})">
+            <summary>
+              Add the items for Full Katakana.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.AddHalfKatakana(System.Char[],System.Collections.Generic.List{System.Char[]})">
+            <summary>
+              Add the items for Half Katakana.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.#ctor(C1.UWP.KanaConvertedCharSet)">
+            <summary>
+              Initializes a new instance of the KanaConvertedCharSetEnumerator
+            </summary>
+            <param name="owner">
+              Indicates the owner of the KanaConvertedCharSetEnumerator.
+            </param>
+        </member>
+        <member name="P:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.Current">
+            <summary>
+              Gets the current browsed item in the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.Reset">
+            <summary>
+              Resets the character set enumerator to start the browsing.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.KanaConvertedCharSetEnumerator.MoveNext">
+            <summary>
+              Move to next item in the character set.
+            </summary>
+            <returns>
+              <b>true</b>, there have a item to be browsed.
+              <b>false</b>, the browsing has finished.
+            </returns>
+        </member>
+        <member name="F:C1.UWP.KanaConvertedCharSet._seed">
+            <summary>
+              A <b>char</b> indicates browsing seed.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.#ctor(System.Char)">
+            <summary>
+              Initializes a new instance of the KanaConvertedCharSet class.
+            </summary>
+            <param name="kanaCharacter">
+              A <b>char</b> indicates a kana character.
+            </param>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.#ctor(System.Char,System.Char)">
+            <summary>
+              Initializes a new instance of the KanaConvertedCharSet class.
+            </summary>
+            <param name="kanaCharacter">
+              A <b>char</b> indicates a kana character.
+            </param>
+            <param name="followedCharacter">
+              A <b>char</b> indicates a character that follows the kana character..
+            </param>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.Initialize(System.Char[])">
+            <summary>
+              Initializes the result of the current instance.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.KanaConvertedCharSet.Seed">
+            <summary>
+              Gets a start point for browsing the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="P:C1.UWP.KanaConvertedCharSet.Key">
+            <summary>
+              Gets the key item in the set.
+            </summary>
+            <value>
+              A <b>char</b> indicates a key item that can be used to identify a character set.
+            </value>
+            <remarks>
+              I choose the Upper Hiragana as the key.
+            </remarks>
+        </member>
+        <member name="M:C1.UWP.KanaConvertedCharSet.GetEnumerator">
+            <summary>
+              Gets the enumerator for the <see cref="T:C1.UWP.KanaConvertedCharSet"/>.
+            </summary>
+            <returns>
+              Returns the enumerator for the <see cref="T:C1.UWP.KanaConvertedCharSet"/>.
+            </returns>
+        </member>
+        <member name="T:C1.UWP.NormalConvertedCharSet">
+            <summary>
+              Defines the enumerator of Normal character set.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator">
+            <summary>
+              Defines the enumerator for NormalConvertedCharSet.
+            </summary>
+        </member>
+        <member name="T:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator.Steps">
+            <summary>
+              A enumeration indicates the converted states.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator._owner">
+            <summary>
+              Indicates the owner of the enumerator.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator._step">
+            <summary>
+              A <b>char</b> array indicates current state.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator.#ctor(C1.UWP.NormalConvertedCharSet)">
+            <summary>
+              Initializes a new instance of the <see cref="T:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator"/>.
+            </summary>
+            <param name="owner">
+              Indicates the owner of the enumerator.
+            </param>
+        </member>
+        <member name="P:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator.Current">
+            <summary>
+              Gets the current browsed item in the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="M:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator.Reset">
+            <summary>
+              Resets the character set enumerator to start the browsing.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.NormalConvertedCharSet.NormalConvertedCharSetEnumerator.MoveNext">
+            <summary>
+              Move to next item in the character set.
+            </summary>
+            <returns>
+              <b>true</b>, there have a item to be browsed.
+              <b>false</b>, the browsing has finished.
+            </returns>
+        </member>
+        <member name="F:C1.UWP.NormalConvertedCharSet._seed">
+            <summary>
+              A <b>char</b> indicates browsing seed.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.NormalConvertedCharSet.#ctor(System.Char)">
+            <summary>
+              Initializes a new instance of the AlphabetCharacterGroupEnumerator class.
+            </summary>
+            <param name="character">
+              A <b>char</b> indicates a alphabet character.
+            </param>
+        </member>
+        <member name="P:C1.UWP.NormalConvertedCharSet.Seed">
+            <summary>
+              Gets a start point for browsing the set.
+            </summary>
+            <value>
+              A <b>char</b> array indicates a meaning character in the Japanese.
+            </value>
+        </member>
+        <member name="P:C1.UWP.NormalConvertedCharSet.Key">
+            <summary>
+              Gets the key item in the set.
+            </summary>
+            <value>
+              A <b>char</b> indicates a key item that can be used to identify a character set.
+            </value>
+        </member>
+        <member name="M:C1.UWP.NormalConvertedCharSet.GetEnumerator">
+            <summary>
+              Gets the enumerator for the <see cref="T:C1.UWP.NormalConvertedCharSet"/>.
+            </summary>
+            <returns>
+              Returns the enumerator for the <see cref="T:C1.UWP.NormalConvertedCharSet"/>.
+            </returns>
+        </member>
+        <member name="T:C1.UWP.Core.KeyboardUtil">
+            <summary>
+            Keyboard utilities.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Core.KeyboardUtil.Shift">
+            <summary>
+            Gets a value indicating whether shift key is pressed.
+            </summary>
+            <value><c>true</c> if shift key is pressed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:C1.UWP.Core.KeyboardUtil.Ctrl">
+            <summary>
+            Gets a value indicating whether ctrl key is pressed.
+            </summary>
+            <value><c>true</c> if ctrl key is pressed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:C1.UWP.Core.KeyboardUtil.Alt">
+            <summary>
+            Gets a value indicating whether alt key is pressed.
+            </summary>
+            <value><c>true</c> if ctrl key is pressed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:C1.UWP.Core.KeyboardUtil.Command">
+            <summary>
+            Returns whether ctrl or apple key are pressed.
+            </summary>
+            <remarks>
+            Useful for handling shortcuts in Windows and Mac.
+            </remarks>
+        </member>
+        <member name="T:C1.UWP.Core.ScrollViewerTouchBehavior">
+            <summary>
+            Adds touch support to MS ScrollViewer to scroll with the finger over the scrolling area.
+            </summary>
+        </member>
+        <member name="M:C1.UWP.Core.ScrollViewerTouchBehavior.GetTouchBehavior(Windows.UI.Xaml.Controls.ScrollViewer)">
+            <summary>
+            Gets the touch behavior associated with the specified ScrollViewer.
+            </summary>
+            <param name="scrollViewer">The scroll viewer which has the touch behavior attached.</param>
+        </member>
+        <member name="M:C1.UWP.Core.ScrollViewerTouchBehavior.SetTouchBehavior(Windows.UI.Xaml.Controls.ScrollViewer,C1.UWP.Core.ScrollViewerTouchBehavior)">
+            <summary>
+            Sets a touch behavior to a ScrollViewer.
+            </summary>
+            <param name="scrollViewer">The scroll viewer that will be able to be scrolled with the finger.</param>
+            <param name="value">The touch behavior instance.</param>
+        </member>
+        <member name="F:C1.UWP.Core.ScrollViewerTouchBehavior.TouchBehaviorProperty">
+            <summary>
+            Identifies the TouchBehavior attached property. 
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Core.ScrollViewerTouchBehavior.HasInertia">
+            <summary>
+            Gets or sets a value indicating whether the touch scrolling will have inertia.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Core.ScrollViewerTouchBehavior.HasInertiaProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Core.ScrollViewerTouchBehavior.HasInertia"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Core.ScrollViewerTouchBehavior.PanningDirection">
+            <summary>
+            Gets or sets the panning direction.
+            </summary>
+            <remarks>
+            It only applies if IgnoreSwipe is set to true.
+            </remarks>
+        </member>
+        <member name="F:C1.UWP.Core.ScrollViewerTouchBehavior.PanningDirectionProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Core.ScrollViewerTouchBehavior.PanningDirection"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:C1.UWP.Core.ScrollViewerTouchBehavior.IgnoreSwipe">
+            <summary>
+            Gets or sets a value indicating whether the swipe gesture is ignored.
+            </summary>
+        </member>
+        <member name="F:C1.UWP.Core.ScrollViewerTouchBehavior.IgnoreSwipeProperty">
+            <summary>
+            Identifies the <see cref="P:C1.UWP.Core.ScrollViewerTouchBehavior.IgnoreSwipe"/> dependency property.
+            </summary>
+        </member>
+        <member name="T:C1.Core.CharType">
+            <summary>
+              Defines the category of a Unicode character.  
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.OtherChar">
+            <summary>
+              Indicates that the character is not of a particular category.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Control">
+            <summary>
+              Indicates that the character is a control code.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Numeric">
+            <summary>
+              Indicates that the character is a numeric digit.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.MathSymbol">
+            <summary>
+              Indicates that the character is a mathematical symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Symbol">
+            <summary>
+              Indicates that the character is a symbol.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Punctuation">
+            <summary>
+              Indicates that the character is a punctuation. ( Open &amp; Close )
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Space">
+            <summary>
+              Indicates that the character is a space character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.UpperCase">
+            <summary>
+              Indicates that the character is an upper case letter.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.LowerCase">
+            <summary>
+              Indicates that the character is a lower case letter.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Katakana">
+            <summary>
+              Indicates that the character is a Japanese Katakana character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Hiragana">
+            <summary>
+              Indicates that the character is a Japanese Hiragana character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.FarEastPunctation">
+            <summary>
+              Indicates that the character is a CJK punctuation.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.Hangul">
+            <summary>
+              Indicates that the character is a Hangal character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharType.FullWidth">
+            <summary>
+              Indicates that the character is of full width.
+            </summary>
+        </member>
+        <member name="T:C1.Core.CharHelper">
+            <summary>
+              Represents the extension functions to the standard .NET Char type. The purpose for this is to provide better
+              CJK (Chinese, Japanese, Korean ) character support.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.Null">
+            <summary>
+             Defines the Null char.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.Backspace">
+            <summary>
+              Defines the control char: Backspace
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.Tab">
+            <summary>
+              Defines the control char: Tab.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.Space">
+            <summary>
+              Defines the control char: Space.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.SBCS_SPACE">
+            <summary>
+              An const <b>char</b> value indicates the SBCS space character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.DBCS_SPACE">
+            <summary>
+              An const <b>char</b> value indicates the DBCS space character.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._charstarts">
+            <summary>
+              Character groups (character codes) based on Unicode 3.1.
+            </summary>
+        </member>
+        <member name="T:C1.Core.CharHelper.Blocks">
+            <summary>
+              Character blocks categorized base on the Unicode standard.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._fullhalfblocks">
+            <summary>
+              Table of multi-width character blocks.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._mwtable">
+            <summary>
+              Type of multi-width characters.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._halfkana">
+            <summary>
+              Mapping table of full width Katakana.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._fullkana">
+            <summary>
+              Mapping table of half-width Katakana.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper._accentkana">
+            <summary>
+              Mapping table for accents for the Japanese language.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.MinValue">
+            <summary>
+              Represents the smallest possible value of a Char. 
+              This field is constant.
+            </summary>
+        </member>
+        <member name="F:C1.Core.CharHelper.MaxValue">
+            <summary>
+              Represents the largest possible value of a Char. 
+              This field is constant.
+            </summary>
+        </member>
+        <member name="M:C1.Core.CharHelper.GetCharType(System.Char)">
+            <summary>
+              Retrieves the type of character.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              A CharType representing the type of character of c.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsCharOfType(System.Char,C1.Core.CharType)">
+            <summary>
+              Determines whether the specified character is of the
+              specified type.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <param name="type">A CharType type.</param>
+            <returns>
+              true if specified c and type matches the type of the
+              character; otherwise false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsMultiWidth(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a multi-width character.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a multi-width character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsMultiWidth(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in a specified string is categorized as a multi-width 
+              character. 
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a multi-width 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsFullWidth(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is a 
+              full width character. Usually CJK characters are considers 
+              as full widths.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a full width character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsFullWidth(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a full width character. Usually 
+              CJK characters are considers as full widths.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a full width 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsOther(System.Char)">
+            <summary>
+              Indicates whether a Unicode character doesn't belong to
+              any specific letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is doesn't a Katakana character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsControl(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a control code.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a control code; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsControl(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a control code.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a control 
+              code; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsKatakana(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Katakana letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Katakana character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsKatakana(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Katakana character.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Katakana 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsHiragana(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Hiragana letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Hiragana character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsHiragana(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Hiragana character.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Hiragana 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsDigit(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Numeric digit.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Numeric character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsDigit(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Numeric digit.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Numeric 
+              digit; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsPunctuation(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Punctuation character.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Punctuation character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsPunctuation(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Punctuation character.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Punctuation 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsMathSymbol(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a mathematical symbol.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a mathematical character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsMathSymbol(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a mathematical symbol.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a mathematical 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsSymbol(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Symbol character.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Symbol character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsSymbol(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Symbol character.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Symbol 
+              character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsLower(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Lowercase letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Lowercase letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsLower(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Lowercase letter.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Lowercase 
+              letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsUpper(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Uppercase letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a Uppercase letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsUpper(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Uppercase letter.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Uppercase 
+              letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsDigitOrSymbol(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a Numeric or a Math symbol.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a numeric or symbol character; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsDigitOrSymbol(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a Numeric or a Math symbol.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a Numeric 
+              or a Math symbol; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsAlphabet(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a alphabet letter.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a alphabet letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsAlphabet(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a alphabet letter.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a alphabet 
+              letter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsAlphaOrDigit(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a alphabet letter or digit.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a alphabet letter or digit; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsAlphaOrDigit(System.String,System.Int32)">
+            <summary>
+              Indicates whether the character at the specified position 
+              in the specified string is a alphabet letter or digit.
+            </summary>
+            <param name="s">A string.</param>
+            <param name="index">The character position in s.</param>
+            <returns>
+              true if the character at position index in s is a alphabet 
+              letter or digit; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsUpperKana(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a upper (capital) case kana.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a kana upper (capital) case; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsLowerKana(System.Char)">
+            <summary>
+              Indicates whether the specified Unicode character is 
+              categorized as a lower (normal) case kana.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c is a kana lower (normal) case; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.HasLowerKana(System.Char)">
+            <summary>
+              Determines whether the related kana has a related lower case.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              true if c has a related lower case kana; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsSpace(System.Char)">
+            <summary>
+              Determines whether the specified ch is space char.
+            </summary>
+            <param name="ch">
+              The ch to be check
+            </param>
+            <returns>
+              A <b>bool</b> value, <b>true</b> if the specified ch is space; otherwise, <b>false</b>.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToFullWidth(System.Char)">
+            <summary>
+              Transforms the specified character to a full width character
+              if possible. Ranges are Latin basic, Katakana and Hangul 
+              characters.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              Full width character of c, otherwise original character
+              returned.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToFullWidth(System.Boolean@,System.Char[])">
+            <summary>
+              Tansforms the specified character to a full width character
+              if possible. This method differs from the other where it 
+              takes on an array of characters. In FarEast country there 
+              are times when multiple half width characters make a one
+              full width character.
+            </summary>
+            <param name="c">An array of characters.</param>
+            <param name="processedAll">
+              When the soundex character is processed a <b>true</b> is 
+              returned; otherwise, a <b>false</b> returned.
+            </param>
+            <returns>
+              Full width character of c, otherwise the original character
+              is returned.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToHalfWidth(System.Char)">
+            <summary>
+              Converts the value of a Unicode character to it's half
+              width equivalent. Ranges are Latin basic, Katakana and 
+              Hangul characters.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              <para>The half width equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                 The unchanged value of c, if c is already a half
+                 width or not a multi-width character.
+              </para>
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToHalfWidthEx(System.Char)">
+            <summary>
+              Transforms the specified character to a half width character
+              if possible. This method differs from the ToHalfWidth method
+              where it tries to return the accurate half width character - 
+              which most likely happens in FarEast countries.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              A character array representing c in half width form. In most
+              cases this array will have only one element.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToKatakana(System.Char)">
+            <summary>
+              Converts the value of a Unicode character to it's 
+              "Katakana" equivalent. Special character handling 
+              for the Japanese language.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              <para>The Katakana equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                 The unchanged value of c, if c is already a 
+                 Katakana or not Hiragana.
+              </para>
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToKatakana(System.Char,System.Boolean)">
+            <summary>
+              Converts the value of a Unicode character to it's 
+              "Katakana" equivalent with an optional setting of
+              full or half width. Special character handling for
+              the Japanese language 
+            </summary>
+            <param name="c">
+              A Unicode character.
+            </param>
+            <param name="fullWidth">
+              <b>true</b> to return a full width Katakana, and 
+              <b>false</b> to return a half width Katakana.
+            </param>
+            <returns></returns>
+            <returns>
+              <para>The Katakana equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                 The unchanged value of c, if c is already a 
+                 Katakana or not Hiragana.
+              </para>
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToHiragana(System.Char)">
+            <summary>
+              Converts the value of a Unicode character to it's 
+              "Hiragana" equivalent. Special character handling 
+              for the Japanese language.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              <para>The Hiragana equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                 The unchanged value of c, if c is already a 
+                 Hiragana or not Katakana.
+              </para>
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToAnsi(System.Char)">
+            <summary>
+              Converts the value of a Unicode character to it's
+              ANSI equivalent.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              An Ansi character equivalent of c in the current culture.
+            </returns>
+            <remarks>
+              Encodes the specified Unicode character to an ANSI
+              character using the current culture.
+            </remarks>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToAnsi(System.Char,System.Globalization.CultureInfo)">
+            <summary>
+              Converts the value of a Unicode character to it's
+              ANSI equivalent using the specified culture information.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <param name="culture">
+              A CultureInfo object. If a null reference is passed, the 
+              current culture is assumed. 
+            </param>
+            <returns>
+              An Ansi character equivalent of c using the specified culture.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToSJIS(System.Char)">
+            <summary>
+              Converts the value of a JIS (Japanese encoding) character
+              to it's Shift-JIS equivalent.
+            </summary>
+            <param name="c">A JIS character.</param>
+            <returns>
+              <para>The Shift-JIS equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                The unchanged value of c, if c is not a full width
+            	character.
+              </para>
+            </returns>
+            <remarks> 
+              <newpara>
+                Converts a JIS character to it's equivalent Shift-JIS
+                character - used in the Japanese language.
+              </newpara>
+              <newpara>
+                Please note that this method does not take a Unicode
+                character as it's parameter - use the character value
+                returned by the "ToJIS" method.
+              </newpara>
+            </remarks>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToJIS(System.Char)">
+            <summary>
+              Converts the value of a Shift-JIS (Japanese encoding) 
+              character to it's JIS equivalent.
+            </summary>
+            <param name="c">A Shift-JIS character.</param>
+            <returns>
+              <para>The JIS equivalent of c.</para>
+              <para>- or -</para>
+              <para>
+                The unchanged value of c, if c is not a full width
+            	character.
+              </para>
+            </returns>
+            <remarks> 
+              <newpara>
+                Converts a Shift-JIS character to it's equivalent JIS
+                character - used in the Japanese language.
+              </newpara>
+              <newpara>
+                Please note that this method does not take a Unicode
+                character as it's parameter - use the character value
+                returned by the "ToSJIS" method.
+              </newpara>
+            </remarks>
+        </member>
+        <member name="M:C1.Core.CharHelper.FromAnsi(System.Char)">
+            <summary>
+              Converts the value of an ANSI character to it's Unicode
+              equivalent.
+            </summary>
+            <param name="c">An ANSI character.</param>
+            <returns>
+              A Unicode character equivalent of c.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.FromAnsi(System.Char,System.Globalization.CultureInfo)">
+            <summary>
+              Converts the value of a ANSI character to it's Unicode
+              equivalent using the specified culture information.
+            </summary>
+            <param name="c">An ANSI character.</param>
+            <param name="culture">
+              A CultureInfo object. If a null reference is passed, the 
+              current culture is assumed. 
+            </param>
+            <returns>
+              An Unicode character equivalent of c using the specified culture.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToUpperKana(System.Char)">
+            <summary>
+              Converts an lower (normal) case kana into a upper (capital) case.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>The equivalent kana upper case character.</returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.ToLowerKana(System.Char)">
+            <summary>
+              Converts an upper (capital) case kana into a lower case (normal).
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>The equivalent kana lower case character.</returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.BelongTo(System.Char)">
+            <summary>
+              Retreives the Unicode character block the specified character
+              belongs to. Current version supports a range from '\u000' 
+              through '\uffff'.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              A Unicode block the specified character belongs to.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.MultiWidthDetails(System.Char)">
+            <summary>
+              Returns further detail information of the character, since
+              it lies in a range where it holds a fixture of different 
+              character widths.
+            </summary>
+            <param name="c">A Unicode character.</param>
+            <returns>
+              An CharType describing the type of the character, and also
+              the width whether it's full or half.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.IsFarEastBlock(C1.Core.CharHelper.Blocks,System.Char)">
+            <summary>
+              Determines whether the specified block has to do with 
+              CJK... ( only CJK have concepts of wide )
+            </summary>
+            <param name="block">A unicode char block.</param>
+            <param name="c">
+              A <see cref="T:System.Char"/> to process.
+            </param>
+            <returns>
+              true if the block is related to CJK; otherwise false.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.innerToChar(System.Byte[])">
+            <summary>
+              Converts a byte array into a char type. (Internal usage)
+            </summary>
+            <param name="value">A byte array.</param>
+            <returns>
+              A character equivalent of value.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.innerToByte(System.Char)">
+            <summary>
+              Converts a single character into a byte array. (Internal usage)
+            </summary>
+            <param name="c">A character.</param>
+            <returns>
+              A byte array equivalent of c.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.GetFullHalfWidthSpecialChar(System.Char,System.Boolean)">
+            <summary>
+              Conversion between half and full width characters for Japanese
+              special characters.
+            </summary>
+            <param name="c">A character.</param>
+            <param name="toFull">
+              <b>true</b> to convert to full width; otherwise, <b>false</b>.
+            </param>
+            <returns>
+              The converted character. <see cref="F:System.Char.MinValue"/> means conversion
+              didn't take place.
+            </returns>
+        </member>
+        <member name="M:C1.Core.CharHelper.Convert(System.String,System.Int32)">
+            <summary>
+              Convert the character in the special index.
+            </summary>
+            <param name="text">
+              The string to be checked.
+            </param>
+            <param name="index">
+              The character index in the string.
+            </param>
+            <returns>
+              The convert string.
+            </returns>
+        </member>
+        <member name="T:C1.Core.C1RelativePopup">
+            <summary>
+            Popup that will be placed relative to another element
+            </summary>
+        </member>
+        <member name="T:C1.Core.AutoSizeMode">
+            <summary>
+            Determines how the popup will be resized when the content changes its size.
+            </summary>
+        </member>
+        <member name="F:C1.Core.AutoSizeMode.GrowAndShrink">
+            <summary>
+            Change its size according to the content size
+            </summary>
+        </member>
+        <member name="F:C1.Core.AutoSizeMode.GrowOnly">
+            <summary>
+            Grows its size when the content is bigger but remains unchanged when the content size is smaller. 
+            </summary>
+        </member>
+        <member name="F:C1.Core.AutoSizeMode.GrowHorizontally">
+            <summary>
+            Grows its size horizontally, but it shrink its size vertically if needed.
+            </summary>
+        </member>
+        <member name="T:C1.Core.PopupUtil">
+            <summary>
+            Utility methods for popups.
+            </summary>
+        </member>
+        <member name="M:C1.Core.PopupUtil.Position(Windows.UI.Xaml.Controls.Primitives.Popup,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor)">
+            <summary>
+            Positions a <see cref="T:Windows.UI.Xaml.Controls.Primitives.Popup" /> so that the specified point in the Popup matches the specified point of a FrameworkElement.
+            </summary>
+            <param name="popup">The popup to position.</param>
+            <param name="popupAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the Popup.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement.</param>
+        </member>
+        <member name="M:C1.Core.PopupUtil.Position(Windows.UI.Xaml.Controls.Primitives.Popup,Windows.Foundation.Point)">
+            <summary>
+            Positions a <see cref="T:Windows.UI.Xaml.Controls.Primitives.Popup" /> in a specified absolute point.
+            </summary>
+            <param name="popup">The popup to position.</param>
+            <param name="point">The popup position.</param>
+        </member>
+        <member name="M:C1.Core.PopupUtil.TestPosition(Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,Windows.Foundation.Point,System.Double,System.Double,Windows.UI.Xaml.FlowDirection)">
+            <summary>
+            Calculates the position of a <see cref="T:Windows.UI.Xaml.FrameworkElement" /> so that the specified point in the FrameworkElement matches the specified point of another FrameworkElement.
+            </summary>
+            <param name="positionElement">The element to position.</param>
+            <param name="positionAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the element to position.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement used as reference.</param>
+            <param name="elementOffset">The offset (absolute position) of the reference element.</param>
+            <param name="overlapHorizontal">The horizontal overlap between the elements (used for corner matching's).</param>
+            <param name="overlapVertical">The vertical overlap between the elements (used for corner matching's).</param>
+            <param name="flowDir">The FlowDirection used for the calculations.</param>
+            <returns>The absolute point where the FrameworkElement would be located.</returns>
+        </member>
+        <member name="M:C1.Core.PopupUtil.GetPosition(Windows.UI.Xaml.UIElement,Windows.Foundation.Point)">
+            <summary>
+            return a absolute position according to the relative position of element
+            </summary>
+            <param name="element">the given element</param>
+            <param name="point">the given relative position</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Core.PopupUtil.TestPosition(Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,Windows.Foundation.Point,System.Double,System.Double)">
+            <summary>
+            Calculates the position of a <see cref="T:Windows.UI.Xaml.FrameworkElement" /> so that the specified point in the FrameworkElement matches the specified point of another FrameworkElement.
+            </summary>
+            <param name="positionElement">The element to position.</param>
+            <param name="positionAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the element to position.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement used as reference.</param>
+            <param name="elementOffset">The offset (absolute position) of the reference element.</param>
+            <param name="overlapHorizontal">The horizontal overlap between the elements (used for corner matching's).</param>
+            <param name="overlapVertical">The vertical overlap between the elements (used for corner matching's).</param>
+            <returns>The absolute point where the FrameworkElement would be located.</returns>
+        </member>
+        <member name="M:C1.Core.PopupUtil.TestPosition(Windows.UI.Xaml.Controls.Primitives.Popup,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,System.Double,System.Double)">
+            <summary>
+            Calculates the position of a <see cref="T:Windows.UI.Xaml.Controls.Primitives.Popup" /> so that the specified point in the Popup matches the specified point of a FrameworkElement.
+            </summary>
+            <param name="popup">The popup to position.</param>
+            <param name="popupAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the Popup.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement.</param>
+            <param name="overlapHorizontal">The horizontal overlap between the elements (used for corner matching's).</param>
+            <param name="overlapVertical">The vertical overlap between the elements (used for corner matching's).</param>
+            <returns>The absolute point where the popup would be located</returns>
+        </member>
+        <member name="M:C1.Core.PopupUtil.TestPosition(Windows.UI.Xaml.Controls.Primitives.Popup,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor)">
+            <summary>
+            Calculates the position of a <see cref="T:Windows.UI.Xaml.Controls.Primitives.Popup" /> so that the specified point in the Popup matches the specified point of a FrameworkElement.
+            </summary>
+            <param name="popup">The popup to position.</param>
+            <param name="popupAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the Popup.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement.</param>
+            <returns>The absolute point where the popup would be located</returns>
+        </member>
+        <member name="M:C1.Core.PopupUtil.TestPosition(Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,Windows.UI.Xaml.FrameworkElement,C1.UWP.Core.Anchor,System.Double,System.Double)">
+            <summary>
+            Calculates the position of a <see cref="T:Windows.UI.Xaml.FrameworkElement" /> so that the specified point in the FrameworkElement matches the specified point of another FrameworkElement.
+            </summary>
+            <param name="positionElement">The element to position.</param>
+            <param name="positionAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the element to position.</param>
+            <param name="element">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to use as reference.</param>
+            <param name="elementAnchor">An <see cref="T:C1.UWP.Core.Anchor" /> value specifying the point in the FrameworkElement used as reference.</param>
+            <param name="overlapHorizontal">The horizontal overlap between the elements (used for corner matching's).</param>
+            <param name="overlapVertical">The vertical overlap between the elements (used for corner matching's).</param>
+            <returns>The absolute point where the FrameworkElement would be located.</returns>
+        </member>
+    </members>
+</doc>

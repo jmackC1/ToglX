@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="ThemeDictionaries" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
+    <RootType FullName="C1.UWP.Grid.FlexGrid">
+      <RootProperty Name="GridLinesBrush" />
+      <RootProperty Name="RowBackground" />
+      <RootProperty Name="AlternatingRowBackground" />
+      <RootProperty Name="SelectionBackground" />
+      <RootProperty Name="SelectionForeground" />
+      <RootProperty Name="SelectionAdornerBrush" />
+      <RootProperty Name="SelectionAdornerBorderBrush" />
+      <RootProperty Name="CursorBackground" />
+      <RootProperty Name="RowHeaderBackground" />
+      <RootProperty Name="ColumnHeaderBackground" />
+      <RootProperty Name="GroupRowBackground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="C1.UWP.Grid.GridCellView" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer" />
+    <RootType FullName="C1.UWP.Grid.GridFreezingLayer" />
+    <RootType FullName="C1.UWP.Grid.GridSelectionLayer" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+  </Roots.RootTypes>
+</Roots>

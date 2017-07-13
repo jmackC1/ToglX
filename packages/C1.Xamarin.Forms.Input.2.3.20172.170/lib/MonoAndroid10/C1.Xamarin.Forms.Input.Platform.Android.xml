@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Xamarin.Forms.Input.Platform.Android</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.Android.C1InputRenderer">
+            <summary>
+            The render of C1Input controls.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1InputRenderer.Init">
+            <summary>
+            Loads renderers libraries to memory.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.Android.C1AutoCompleteRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1AutoComplete"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1AutoCompleteRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1AutoCompleteRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1AutoCompleteRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1AutoCompleteRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1ComboBox"/> renderer.
+            </summary>
+        </member>
+        <member name="F:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer.androidViewCache">
+            <summary>
+            The dictionary of android view.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1ComboBoxRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.Android.C1DropDownRenderer">
+            <summary>
+            <see cref="T:C1.Xamarin.Forms.Input.C1DropDown"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1DropDownRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1DropDownRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1DropDownRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Method that is called when a element property has changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1DropDownRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="T:C1.Xamarin.Forms.Input.Platform.Android.C1MaskedTextFieldRenderer">
+            <summary>
+            <see cref="T:C1.Android.Input.C1MaskedTextView"/> renderer.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1MaskedTextFieldRenderer.CreateNativeElement">
+            <summary>
+            This method is called to create the native element.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1MaskedTextFieldRenderer.InitializeNativeElement">
+            <summary>
+            This method is called to initializes the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1MaskedTextFieldRenderer.FinalizeNativeElement">
+            <summary>
+            This method is called to finalize the native element.
+            </summary>
+        </member>
+        <member name="M:C1.Xamarin.Forms.Input.Platform.Android.C1MaskedTextFieldRenderer.GetTextColor(Xamarin.Forms.Color)">
+            <summary>
+            Change <see cref="T:Xamarin.Forms.Color"/> to <see cref="T:Android.Graphics.Color"/>.
+            </summary>
+            <param name="textColor">The <see cref="T:Xamarin.Forms.Color"/> value.</param>
+            <returns>The <see cref="T:Android.Graphics.Color"/> value.</returns>
+        </member>
+    </members>
+</doc>

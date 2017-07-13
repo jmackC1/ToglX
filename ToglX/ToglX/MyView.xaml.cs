@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using C1.Xamarin.Forms;
+using C1.Xamarin.Forms.Grid;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

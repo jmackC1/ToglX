@@ -9,7 +9,7 @@
     <ContentPage Title="Timer">
         <StackLayout x:Name="timerStack" Spacing="3">
             <Label HorizontalOptions="CenterAndExpand" FontSize="Large" x:Name="lblTime" Text="00:00"/>
-            <Button TextColor="White" BackgroundColor="Green" x:Name="btnTime" Text="START"/>
+            <Button TextColor="White" BackgroundColor="Green" x:Name="btnTime" Text="START" Clicked="btnTime_Clicked"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Manual Entry">
@@ -40,8 +40,5 @@
         </StackLayout>
     </ContentPage>
     <ContentPage Title="My Entries">
-        <c1:FlexGrid x:Name="fg1">
-            
-        </c1:FlexGrid>
     </ContentPage>
 </TabbedPage>

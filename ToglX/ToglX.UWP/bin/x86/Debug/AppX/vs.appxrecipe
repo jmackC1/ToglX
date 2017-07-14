@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-07-13T19:24:33.386</Modified>
+      <Modified>2017-07-14T18:46:27.865</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\ToglX.UWP.exe">
       <PackagePath>entrypoint\ToglX.UWP.exe</PackagePath>
-      <Modified>2017-07-13T19:23:58.541</Modified>
+      <Modified>2017-07-14T18:46:24.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justinm\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,7 +513,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX\bin\Debug\ToglX.dll">
       <PackagePath>ToglX.dll</PackagePath>
-      <Modified>2017-07-13T19:23:33.487</Modified>
+      <Modified>2017-07-14T18:46:21.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -688,11 +688,11 @@
     <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-07-13T19:24:30.204</Modified>
+      <Modified>2017-07-14T01:53:21.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.UWP\bin\x86\Debug\Core\ToglX.UWP.exe">
       <PackagePath>ToglX.UWP.exe</PackagePath>
-      <Modified>2017-07-13T19:24:33.369</Modified>
+      <Modified>2017-07-14T18:46:27.861</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

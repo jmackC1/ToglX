@@ -103,11 +103,15 @@ C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\C1.Android
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\C1.Android.Grid.xml
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\C1.CollectionView.xml
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\FormsViewGroup.pdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\obj\Debug\ToglX.Android.csprojResolveAssemblyReference.cache
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\obj\Debug\ToglX.Android.dll
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\obj\Debug\ToglX.Android.pdb
@@ -123,10 +127,6 @@ C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\obj\Debug\R.cs.flag
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\obj\Debug\uploadflags.txt
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\ToglX.Android.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\ToglX.dll.mdb
-C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\FormsViewGroup.dll.mdb
-C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
-C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Java.Interop.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\Mono.Android.dll.mdb
 C:\Users\justinm\Documents\GitHub\ToglX\ToglX\ToglX.Android\bin\Debug\mscorlib.dll.mdb

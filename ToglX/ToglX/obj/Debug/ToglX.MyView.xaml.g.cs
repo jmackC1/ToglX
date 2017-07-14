@@ -39,9 +39,6 @@ namespace ToglX {
         private global::Xamarin.Forms.Entry tagEntry;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::C1.Xamarin.Forms.Grid.FlexGrid fg1;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyView));
             timerStack = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "timerStack");
@@ -52,7 +49,6 @@ namespace ToglX {
             platPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "platPicker");
             lvlPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "lvlPicker");
             tagEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "tagEntry");
-            fg1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::C1.Xamarin.Forms.Grid.FlexGrid>(this, "fg1");
         }
     }
 }

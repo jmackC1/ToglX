@@ -31,20 +31,7 @@ namespace ToglX
 
         private void btnTime_Clicked(object sender, EventArgs e)
         {
-            Stopwatch stopWatch = new Stopwatch();
-            if (stopWatch.IsRunning == false)
-            {
-                stopWatch.Start();
-                TimeSpan ts = stopWatch.Elapsed;
-                string elapsedTime = string.Format("{0:00}:{1:00}",
-                    ts.Hours, ts.Minutes / 10);
-                lblTime.Text = elapsedTime;
-            }
-            else {
-                btnTime.Text = "STOP TIMER";
-                stopWatch.Stop();
-                lblTime.IsVisible = true;
-            }
+            
         }
     }
 }
